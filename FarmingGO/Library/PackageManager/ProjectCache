@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638170498119789384
-    m_Hash: 1980231663
+      ticks: 638170806147811868
+    m_Hash: 4159261674
   m_LockFileStatus:
     m_FilePath: "C:/Users/gtd40/OneDrive/\uBC14\uD0D5 \uD654\uBA74/Farming-GO/FarmingGO/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638170498664432947
-    m_Hash: 2356120779
+      ticks: 638170806147811868
+    m_Hash: 1502843649
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -2891,7 +2891,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: "Android Logcat package provides support for:\n - Android log messages\n
     - Android application memory statistics\n - Android Screen Capture\n - Android
     Screen Recorder\n - Stacktrace Utility\n\nClick the 'View documentation' link
@@ -2933,7 +2933,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 0
+  hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637859722170000000
   documentationUrl: 
@@ -3016,17 +3016,9 @@ m_ResolvedPackages:
     - 4.0.0
     - 4.0.1
     - 5.0.0-pre.1
-    - 5.0.0-pre.2
-    - 5.0.0-pre.3
-    - 5.0.0-pre.4
-    - 5.0.0
     compatible:
     - 4.0.1
     - 5.0.0-pre.1
-    - 5.0.0-pre.2
-    - 5.0.0-pre.3
-    - 5.0.0-pre.4
-    - 5.0.0
     verified: 4.0.1
   dependencies:
   - name: com.unity.subsystemregistration
@@ -3095,7 +3087,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: 'Mobile Notifications package adds support for scheduling local repeatable
     or one-time notifications on iOS and Android.
 
@@ -3166,9 +3158,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 0
+  hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638091319460000000
+  datePublishedTicks: 0
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.mobile.notifications@2.1/manual/index.html
   hasRepository: 1
   repository:
@@ -3193,7 +3185,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: Provides internal registration mechanism for standalone subsystems. 
     It allows a standalone subsystem to inform the Subsystem Manager of its existence.
   status: 0
@@ -3205,13 +3197,9 @@ m_ResolvedPackages:
     - 1.0.5
     - 1.0.6
     - 1.1.0
-    - 1.1.1
-    - 1.1.2
     compatible:
     - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    verified: 1.1.2
+    verified: 1.1.0
   dependencies:
   - name: com.unity.modules.subsystems
     version: 1.0.0
@@ -3232,7 +3220,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 0
+  hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637314426150000000
   documentationUrl: 

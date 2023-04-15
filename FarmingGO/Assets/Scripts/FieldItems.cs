@@ -5,7 +5,8 @@ using UnityEngine;
 public class FieldItems : MonoBehaviour
 {
     public Item item;
-    public GameObject objModel;
+    //public SpriteRenderer image;
+    public GameObject itemPrefab;  // 아이템의 프리팹 (아이템 생성시 프리팹으로 찍어냄)
 
     public void SetItem(Item _item)
     {
@@ -13,10 +14,7 @@ public class FieldItems : MonoBehaviour
         item.itemImage = _item.itemImage;
         item.itemType = _item.itemType;
 
-        if(objModel.name == item.itemName)
-        {
-
-        }
+        //image.Sprite = item.itemImage;
     }
     public Item GetItem()
     {

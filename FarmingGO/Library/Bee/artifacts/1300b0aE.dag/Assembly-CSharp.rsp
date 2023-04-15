@@ -352,9 +352,14 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/CharacterMovement.cs"
-"Assets/Inventory.cs"
-"Assets/InventoryUI.cs"
+"Assets/Scripts/CharacterMovement.cs"
+"Assets/Scripts/FieldItems.cs"
+"Assets/Scripts/Header_Movable.cs"
+"Assets/Scripts/Inventory.cs"
+"Assets/Scripts/InventoryUI.cs"
+"Assets/Scripts/Item.cs"
+"Assets/Scripts/ItemDatabase.cs"
+"Assets/Scripts/Slot.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

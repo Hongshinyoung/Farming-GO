@@ -354,12 +354,18 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CharacterMovement.cs"
 "Assets/Scripts/FieldItems.cs"
+"Assets/Scripts/GameTimestamp.cs"
 "Assets/Scripts/Header_Movable.cs"
 "Assets/Scripts/Inventory.cs"
 "Assets/Scripts/InventoryUI.cs"
 "Assets/Scripts/Item.cs"
 "Assets/Scripts/ItemDatabase.cs"
+"Assets/Scripts/ITimeTracker.cs"
+"Assets/Scripts/Land.cs"
+"Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PlayerInteraction.cs"
 "Assets/Scripts/Slot.cs"
+"Assets/Scripts/TimeManager.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

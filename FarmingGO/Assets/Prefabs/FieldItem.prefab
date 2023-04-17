@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6779881232433497032}
   - component: {fileID: 8787100420818974466}
   - component: {fileID: 1366680795498368610}
+  - component: {fileID: -4916510434597283608}
   m_Layer: 0
   m_Name: FieldItem
   m_TagString: FieldItem
@@ -101,4 +102,18 @@ MonoBehaviour:
     itemType: 0
     itemName: Nat
     itemImage: {fileID: 21300000, guid: 91be191957370b141a45ad398d6ee7f6, type: 3}
-  objModel: {fileID: 7130026378106640087}
+  image: {fileID: 0}
+--- !u!136 &-4916510434597283608
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7130026378106640087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.4, z: 0}

@@ -6,7 +6,6 @@ public class CharacterMovement : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
-    private bool groundedPlayer;
     private float playerSpeed = 8.0f;
     private float gravityValue = -9.81f;
 
@@ -27,5 +26,7 @@ public class CharacterMovement : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
+        
     }
 }

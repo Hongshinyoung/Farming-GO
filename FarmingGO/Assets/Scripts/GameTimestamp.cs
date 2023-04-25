@@ -16,8 +16,8 @@ public class GameTimestamp
     }
     public Season season;
 
-    public enum DayOfTheWeek
-    {
+    public enum DayOfTheWeek 
+    { 
         Saturday,
         Sunday,
         Monday,
@@ -54,84 +54,84 @@ public class GameTimestamp
     {
         minute++;
 
+    
+    if (minute >= 60)
+    {
+        minute = 0;
+        hour++;
+    }
 
-        if (minute >= 60)
+    
+    if (hour >= 24)
+    {
+        hour = 0;
+        day++;
+    }
+
+    
+    if (day > 30)
+    {
+        day = 1;
+
+        
+        if (season == Season.Winter)
         {
-            minute = 0;
-            hour++;
+            season = Season.Spring;
+            year++;
+        }
+        else
+        {
+
+            season++;
         }
 
 
-        if (hour >= 24)
-        {
-            hour = 0;
-            day++;
-        }
 
-
-        if (day > 30)
-        {
-            day = 1;
-
-
-            if (season == Season.Winter)
-            {
-                season = Season.Spring;
-                year++;
-            }
-            else
-            {
-
-                season++;
-            }
-
-
-
-        }
     }
+}
 
-    public DayOfTheWeek GetDayOfTheWeek()
+public DayOfTheWeek GetDayOfTheWeek()
+{
+   
+    int daysPassed = YearsToDays(year) + SeasonsToDays(season) + day;
+
+    
+    int dayIndex = daysPassed % 7;
+
+    
+    return (DayOfTheWeek)dayIndex;
+}
+
+
+public static int HoursToMinutes(int hour)
+{
+    
+    return hour * 60;
+}
+
+
+public static int DaysToHours(int days)
+{
+    
+    return days * 24;
+}
+
+
+public static int SeasonsToDays(Season season)
     {
-
-        int daysPassed = YearsToDays(year) + SeasonsToDays(season) + day;
-
-
-        int dayIndex = daysPassed % 7;
-
-
-        return (DayOfTheWeek)dayIndex;
+    int seasonIndex = (int)season;
+    return seasonIndex * 30;
     }
 
 
-    public static int HoursToMinutes(int hour)
-    {
+public static int YearsToDays(int years)
+    {  
 
-        return hour * 60;
-    }
-
-
-    public static int DaysToHours(int days)
-    {
-
-        return days * 24;
-    }
-
-
-    public static int SeasonsToDays(Season season)
-    {
-        int seasonIndex = (int)season;
-        return seasonIndex * 30;
-    }
-
-
-    public static int YearsToDays(int years)
-    {
-
-        return years * 4 * 30;
+    return years * 4 * 30;
 
     }
 
-    public static int CompareTimestamps(GameTimestamp timestamp1, GameTimestamp timestamp2)
+public static int CompareTimestamps(GameTimestamp timestamp1, GameTimestamp timestamp2)
     {
         int timestamp1Hours = DaysToHours(YearsToDays(timestamp1.year)) + DaysToHours(SeasonsToDays(timestamp1.season))
             + DaysToHours(timestamp1.day) + timestamp1.hour;

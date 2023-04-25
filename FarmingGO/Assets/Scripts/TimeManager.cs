@@ -50,7 +50,7 @@ public class TimeManager : MonoBehaviour
     {
         timestamp.UpdateClock();
 
-        foreach(ITimeTracker listener in listeners)
+        foreach (ITimeTracker listener in listeners)
         {
             listener.ClockUpdate(timestamp);
         }

@@ -4,29 +4,69 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private CharacterController controller;
-    private Vector3 playerVelocity;
-    private float playerSpeed = 8.0f;
-    private float gravityValue = -9.81f;
+ public Transform cameraTransform;
+    public CharacterController controller;
 
-    private void Start()
+    public float moveSpeed = 5f;
+    public float jumpSpeed = 5f;
+    public float gravity = -9.81f;
+    public float yVelocity = 0;
+
+    PlayerInteraction playerInteraction;
+
+    void Start()
     {
-        controller = gameObject.AddComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
+        playerInteraction = GetComponentInChildren<PlayerInteraction>(); 
+
+        if (Input.GetKey(KeyCode.RightBracket))
+        {
+            TimeManager.Instance.Tick();
+        }
     }
 
     void Update()
     {
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        Move();
+        Interact();
+    }
 
-        if (move != Vector3.zero)
+    public void Move() 
+    {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        Vector3 moveDirection = new Vector3(h, 0, v);
+
+        moveDirection = cameraTransform.TransformDirection(moveDirection);
+
+        moveDirection *= moveSpeed;
+        if (moveDirection != Vector3.zero)
         {
-            gameObject.transform.forward = move;
+            gameObject.transform.forward = moveDirection;
         }
 
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        if (controller.isGrounded)
+        {
+            yVelocity = 0;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                yVelocity = jumpSpeed;
+            }
+        }
 
-        
+        yVelocity += (gravity * Time.deltaTime);
+        moveDirection.y = yVelocity;
+        controller.Move(moveDirection * Time.deltaTime);
+    }
+
+    public void Interact() 
+    {
+        //Tool interaction
+        if (Input.GetButtonDown("Fire1"))
+        {
+            //Interact
+            playerInteraction.Interact();
+        }
+
     }
 }

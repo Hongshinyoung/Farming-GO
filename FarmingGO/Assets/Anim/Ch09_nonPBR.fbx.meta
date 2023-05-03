@@ -5,30 +5,25 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch09_body
-    second: {fileID: 2100000, guid: 4ebe915b69e59644490324e027fa9b34, type: 2}
-  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch09_1001_Diffuse
-    second: {fileID: 2800000, guid: f4a561605ac645e42b47f9f4b9314a14, type: 3}
+    second: {fileID: 2800000, guid: 06801965e7e5be24e9ce6fa312f81851, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch09_1001_Glossiness
-    second: {fileID: 2800000, guid: 3e3d2d4c6b54aec458cebd57df26d162, type: 3}
+    second: {fileID: 2800000, guid: 8a2628359d1a1fc48a2aa91c91ca3b07, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch09_1001_Normal
-    second: {fileID: 2800000, guid: 31ae9eb376940ce4e99263934fc42e2f, type: 3}
+    second: {fileID: 2800000, guid: 7c05f866c7dc02b4e8dbcb00ddca085e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch09_1001_Specular
-    second: {fileID: 2800000, guid: 23b068d7a8f642d46aa5b0953ea1feb5, type: 3}
+    second: {fileID: 2800000, guid: bb13c4d1f77555344a4fe7b6e08be061, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -49,7 +44,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -101,9 +96,9 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
-  - c21fe782688faf340989049bd2f5f7cd
-  - 28ea965fe666337469ca6588d56cbb42
-  - 5a227861aab5d97419b1b3cbe23a94d3
+  - ae7fa83c4f090f549a54950476554cee
+  - 2400b0f1274344a48bb454fd9145ae31
+  - 70a36f8186634a24086643ba0681b87e
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -119,13 +114,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0

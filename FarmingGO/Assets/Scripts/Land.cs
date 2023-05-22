@@ -20,6 +20,12 @@ public class Land : MonoBehaviour, ITimeTracker
     //Cache the time the land was watared
     GameTimestamp timeWatered;
 
+    [Header("Crops")]
+
+    public GameObject cropPrefab;
+
+    CropBehaviour cropPlanted = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,6 +104,12 @@ public class Land : MonoBehaviour, ITimeTracker
         {
             int hoursElapsed = GameTimestamp.CompareTimestamps(timeWatered, timestamp);
             Debug.Log(hoursElapsed + "hours since this was watered");
+
+            //작물 성장
+            if(cropPlanted != null)
+            {
+                cropPlanted.Grow();
+            }
 
             if (hoursElapsed > 24)
             {

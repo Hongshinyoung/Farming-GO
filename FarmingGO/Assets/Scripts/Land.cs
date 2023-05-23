@@ -17,13 +17,14 @@ public class Land : MonoBehaviour, ITimeTracker
     //The selection gameobject to enable when the player is selecting the land
     public GameObject select;
 
-    //Cache the time the land was watared
+    //Cache the time the land was watered 
     GameTimestamp timeWatered;
 
     [Header("Crops")]
-
+    //The crop prefab to instantiate
     public GameObject cropPrefab;
 
+    //The crop currently planted on the land
     CropBehaviour cropPlanted = null;
 
     // Start is called before the first frame update
@@ -65,11 +66,9 @@ public class Land : MonoBehaviour, ITimeTracker
                 //Switch to watered material
                 materialToSwitch = wateredMat;
 
-                //Cache the time it was watared
+                //Cache the time it was watered
                 timeWatered = TimeManager.Instance.GetGameTimestamp();
                 break;
-
-
 
         }
 
@@ -85,6 +84,58 @@ public class Land : MonoBehaviour, ITimeTracker
     //When the player presses the interact button while selecting this land
     public void Interact()
     {
+        //Check the player's tool slot
+        //ItemData toolSlot = InventoryManager.Instance.equippedTool;
+
+        ////If there's nothing equipped, return
+        //if (toolSlot == null)
+        //{
+        //    return;
+        //}
+
+        ////Try casting the itemdata in the toolslot as EquipmentData
+        //EquipmentData equipmentTool = toolSlot as EquipmentData;
+
+        ////Check if it is of type EquipmentData 
+        //if (equipmentTool != null)
+        //{
+        //    //Get the tool type
+        //    EquipmentData.ToolType toolType = equipmentTool.toolType;
+
+        //    switch (toolType)
+        //    {
+        //        case EquipmentData.ToolType.Hoe:
+        //            SwitchLandStatus(LandStatus.Farmland);
+        //            break;
+        //        case EquipmentData.ToolType.WateringCan:
+        //            SwitchLandStatus(LandStatus.Watered);
+        //            break;
+        //    }
+
+        //    //We don't need to check for seeds if we have already confirmed the tool to be an equipment
+        //    return;
+        //}
+
+        ////Try casting the itemdata in the toolslot as SeedData
+        //SeedData seedTool = toolSlot as SeedData;
+
+        /////Conditions for the player to be able to plant a seed
+        /////1: He is holding a tool of type SeedData
+        /////2: The Land State must be either watered or farmland
+        /////3. There isn't already a crop that has been planted
+        //if (seedTool != null && landStatus != LandStatus.Soil && cropPlanted == null)
+        //{
+        //    //Instantiate the crop object parented to the land
+        //    GameObject cropObject = Instantiate(cropPrefab, transform);
+        //    //Move the crop object to the top of the land gameobject
+        //    cropObject.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+
+        //    //Access the CropBehaviour of the crop we're going to plant
+        //    cropPlanted = cropObject.GetComponent<CropBehaviour>();
+        //    //Plant it with the seed's information
+        //    cropPlanted.Plant(seedTool);
+
+        //}
         if (landStatus == LandStatus.Farmland)
         {
             SwitchLandStatus(LandStatus.Watered);
@@ -93,26 +144,26 @@ public class Land : MonoBehaviour, ITimeTracker
         {
             SwitchLandStatus(LandStatus.Farmland);
         }
-        //Interaction 
     }
 
-
-    //Checked if 24 hours has passed last watered
     public void ClockUpdate(GameTimestamp timestamp)
     {
+        //Checked if 24 hours has passed since last watered
         if (landStatus == LandStatus.Watered)
         {
+            //Hours since the land was watered
             int hoursElapsed = GameTimestamp.CompareTimestamps(timeWatered, timestamp);
-            Debug.Log(hoursElapsed + "hours since this was watered");
+            Debug.Log(hoursElapsed + " hours since this was watered");
 
-            //작물 성장
-            if(cropPlanted != null)
+            //Grow the planted crop, if any
+            if (cropPlanted != null)
             {
                 cropPlanted.Grow();
             }
 
             if (hoursElapsed > 24)
             {
+                //Dry up (Switch back to farmland)
                 SwitchLandStatus(LandStatus.Farmland);
             }
         }

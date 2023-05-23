@@ -11,7 +11,8 @@ public class VirtualJoystick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     private Vector2 inputDirection;    // 추가
     private bool isInput;    // 추가
-    public PlayerController playerController;
+    [SerializeField]
+    private PlayerController playerController;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class VirtualJoystick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
 
         ControlJoystickLever(eventData);  // 추가
-        isInput = true;    // 추가
+        isInput = true;   // 추가
     }
 
     // 오브젝트를 클릭해서 드래그 하는 도중에 들어오는 이벤트
@@ -40,7 +41,7 @@ public class VirtualJoystick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         // lever.anchoredPosition = clampedDir;
 
         ControlJoystickLever(eventData);    // 추가
-        isInput = false;    // 추가
+        
     }
 
     // 추가
@@ -55,13 +56,25 @@ public class VirtualJoystick : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         lever.anchoredPosition = Vector2.zero;
+        isInput = false;
+        playerController.Move(Vector2.zero);
     }
 
     private void InputControlVector()
     {
-        if (playerController)
+        playerController.Move(inputDirection);
+    }
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+        if (isInput)
         {
-            playerController.Move();
+            InputControlVector();
         }
     }
 }

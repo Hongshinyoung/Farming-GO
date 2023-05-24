@@ -357,6 +357,7 @@
 "Assets/Scripts/CropBehaviour.cs"
 "Assets/Scripts/EquipmentData.cs"
 "Assets/Scripts/GameTimestamp.cs"
+"Assets/Scripts/HandInventorySlot.cs"
 "Assets/Scripts/Header_Movable.cs"
 "Assets/Scripts/InventoryManager.cs"
 "Assets/Scripts/InventorySlot.cs"

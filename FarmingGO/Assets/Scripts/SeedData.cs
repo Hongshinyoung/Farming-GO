@@ -10,4 +10,10 @@ public class SeedData : ItemData
     public ItemData cropToYield;
 
     public GameObject seeding;
+
+    [Header("Regrowable")]
+
+    public bool regrowable;
+
+    public int daysToReGrow;
 }

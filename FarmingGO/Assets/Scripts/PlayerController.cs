@@ -42,11 +42,6 @@ public class PlayerController : MonoBehaviour
 
         //Runs the function that handles all interaction
         Interact();
-
-        if (Input.GetKey(KeyCode.RightBracket))
-        {
-            TimeManager.Instance.Tick();
-        }
     }
 
     public void Interact()

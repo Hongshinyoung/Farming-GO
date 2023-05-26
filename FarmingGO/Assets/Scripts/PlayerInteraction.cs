@@ -94,8 +94,6 @@ public class PlayerInteraction : MonoBehaviour
             selectedLand.Interact();
             return; 
         }
-
-        Debug.Log("Not on any land!");
     }
 
     //Triggered when the player presses the item interact button

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tomato Seeds
   m_EditorClassIdentifier: 
   description: "\uD1A0\uB9C8\uD1A0\uAC00 \uC790\uB77C\uB294 \uC528\uC557"
-  thumbnail: {fileID: -1692488457, guid: 43aa5ecc16203f441a1ac4d65385c73c, type: 3}
+  thumbnail: {fileID: 0}
   gameModel: {fileID: 0}
   daysToGrow: 9
   cropToYield: {fileID: 11400000, guid: af9587db3d912fc43aa263445e09cf29, type: 2}

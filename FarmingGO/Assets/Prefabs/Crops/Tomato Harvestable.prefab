@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1277851066799816739}
   - component: {fileID: 1269836905331324019}
   - component: {fileID: -1359656326787146676}
+  - component: {fileID: 9032774736551521532}
   m_Layer: 8
   m_Name: Tomato Harvestable
   m_TagString: Item
@@ -100,6 +101,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 6738dc7c71544804e95844449bd480d6, type: 2}
+--- !u!64 &9032774736551521532
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282793698127967585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300010, guid: b69b26c8b73b8bd49bf243bbe541a2e0, type: 3}
 --- !u!1001 &3558381814800134234
 PrefabInstance:
   m_ObjectHideFlags: 0

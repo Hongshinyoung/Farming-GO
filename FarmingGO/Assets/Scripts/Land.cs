@@ -136,14 +136,6 @@ public class Land : MonoBehaviour, ITimeTracker
             cropPlanted.Plant(seedTool);
 
         }
-        if (landStatus == LandStatus.Farmland)
-        {
-            SwitchLandStatus(LandStatus.Watered);
-        }
-        else
-        {
-            SwitchLandStatus(LandStatus.Farmland);
-        }
     }
 
     public void ClockUpdate(GameTimestamp timestamp)

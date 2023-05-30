@@ -8,6 +8,7 @@ public class CropBehaviour : MonoBehaviour
 
     [Header("Stage of Life")]
     public GameObject seed;
+    public GameObject wilted;
     public GameObject seeding;
     public GameObject harvastable;
 
@@ -15,9 +16,13 @@ public class CropBehaviour : MonoBehaviour
 
     int maxGrowth;
 
+    int maxHealth = GameTimestamp.HoursToMinutes(48);
+
+    int health;
+
     public enum CropState
     {
-        Seed, Seeding, Harvastable
+        Seed, Seeding, Harvastable, Wilted
     }
 
     public CropState cropState;
@@ -50,6 +55,11 @@ public class CropBehaviour : MonoBehaviour
     {
         growth++;
 
+        if(health < maxHealth)
+        {
+            health++;
+        }
+
         if(growth >= maxGrowth / 2 && cropState == CropState.Seed)
         {
             SwitchState(CropState.Seeding);
@@ -60,12 +70,23 @@ public class CropBehaviour : MonoBehaviour
             SwitchState(CropState.Harvastable);
         }
     }
+
+    public void Wither()
+    {
+        health--;
+
+        if(health <= 0 && cropState != CropState.Seed)
+        {
+            SwitchState(CropState.Wilted);
+        }
+    }
     
     void SwitchState(CropState stateToSwitch)
     {
         seed.SetActive(false);
         seeding.SetActive(false);
         harvastable.SetActive(false);
+        wilted.SetActive(false);
 
         switch (stateToSwitch)
         {
@@ -74,6 +95,9 @@ public class CropBehaviour : MonoBehaviour
                 break;
             case CropState.Seeding:
                 seeding.SetActive(true);
+
+                health = maxHealth;
+
                 break;
             case CropState.Harvastable:
                 harvastable.SetActive(true);
@@ -81,10 +105,13 @@ public class CropBehaviour : MonoBehaviour
                 if (!seedToGrow.regrowable)
                 {
                     harvastable.transform.parent = null;
-
                     Destroy(gameObject);
                 }
 
+                break;
+
+            case CropState.Wilted:
+                wilted.SetActive(true);
                 break;
         }
 

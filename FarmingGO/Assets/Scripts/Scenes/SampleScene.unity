@@ -9005,7 +9005,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -9149,7 +9150,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0b470d4691737a84d9db64197736cff4, type: 2}
   - {fileID: 11400000, guid: 0d24588876900cd4cbd448059e9f6b0e, type: 2}
   - {fileID: 11400000, guid: 15cf315e1627d2546aa1e642bcc3bb28, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: a171315739264834383fe56a36458e4a, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

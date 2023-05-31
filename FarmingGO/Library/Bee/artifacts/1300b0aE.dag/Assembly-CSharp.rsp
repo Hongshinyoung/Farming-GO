@@ -370,6 +370,7 @@
 "Assets/Scripts/Land.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerInteraction.cs"
+"Assets/Scripts/RegrowableHarvestBehaviour.cs"
 "Assets/Scripts/SeedData.cs"
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"

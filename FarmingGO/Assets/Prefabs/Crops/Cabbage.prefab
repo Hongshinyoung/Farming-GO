@@ -219,7 +219,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8554979865546078707}
   - component: {fileID: 2506295404697276759}
-  m_Layer: 0
+  - component: {fileID: -6615587171168103964}
+  m_Layer: 8
   m_Name: Cabbage
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -266,3 +267,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8446973881879383255}
   m_Enabled: 1
+--- !u!114 &-6615587171168103964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554979865545778643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbeb354952c14b4596c1dc4e04cf3d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 5798b2f95b37e36419a5a508dbbc2a0e, type: 2}

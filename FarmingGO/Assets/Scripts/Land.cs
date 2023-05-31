@@ -85,64 +85,56 @@ public class Land : MonoBehaviour, ITimeTracker
     public void Interact()
     {
         //Check the player's tool slot
-        //ItemData toolSlot = InventoryManager.Instance.equippedTool;
+        ItemData toolSlot = InventoryManager.Instance.equippedTool;
 
-        ////If there's nothing equipped, return
-        //if (toolSlot == null)
-        //{
-        //    return;
-        //}
-
-        ////Try casting the itemdata in the toolslot as EquipmentData
-        //EquipmentData equipmentTool = toolSlot as EquipmentData;
-
-        ////Check if it is of type EquipmentData 
-        //if (equipmentTool != null)
-        //{
-        //    //Get the tool type
-        //    EquipmentData.ToolType toolType = equipmentTool.toolType;
-
-        //    switch (toolType)
-        //    {
-        //        case EquipmentData.ToolType.Hoe:
-        //            SwitchLandStatus(LandStatus.Farmland);
-        //            break;
-        //        case EquipmentData.ToolType.WateringCan:
-        //            SwitchLandStatus(LandStatus.Watered);
-        //            break;
-        //    }
-
-        //    //We don't need to check for seeds if we have already confirmed the tool to be an equipment
-        //    return;
-        //}
-
-        ////Try casting the itemdata in the toolslot as SeedData
-        //SeedData seedTool = toolSlot as SeedData;
-
-        /////Conditions for the player to be able to plant a seed
-        /////1: He is holding a tool of type SeedData
-        /////2: The Land State must be either watered or farmland
-        /////3. There isn't already a crop that has been planted
-        //if (seedTool != null && landStatus != LandStatus.Soil && cropPlanted == null)
-        //{
-        //    //Instantiate the crop object parented to the land
-        //    GameObject cropObject = Instantiate(cropPrefab, transform);
-        //    //Move the crop object to the top of the land gameobject
-        //    cropObject.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-
-        //    //Access the CropBehaviour of the crop we're going to plant
-        //    cropPlanted = cropObject.GetComponent<CropBehaviour>();
-        //    //Plant it with the seed's information
-        //    cropPlanted.Plant(seedTool);
-
-        //}
-        if (landStatus == LandStatus.Farmland)
+        //If there's nothing equipped, return
+        if (toolSlot == null)
         {
-            SwitchLandStatus(LandStatus.Watered);
+            return;
         }
-        else
+
+        //Try casting the itemdata in the toolslot as EquipmentData
+        EquipmentData equipmentTool = toolSlot as EquipmentData;
+
+        //Check if it is of type EquipmentData 
+        if (equipmentTool != null)
         {
-            SwitchLandStatus(LandStatus.Farmland);
+            //Get the tool type
+            EquipmentData.ToolType toolType = equipmentTool.toolType;
+
+            switch (toolType)
+            {
+                case EquipmentData.ToolType.Hoe:
+                    SwitchLandStatus(LandStatus.Farmland);
+                    break;
+                case EquipmentData.ToolType.WateringCan:
+                    SwitchLandStatus(LandStatus.Watered);
+                    break;
+            }
+
+            //We don't need to check for seeds if we have already confirmed the tool to be an equipment
+            return;
+        }
+
+        //Try casting the itemdata in the toolslot as SeedData
+        SeedData seedTool = toolSlot as SeedData;
+
+        ///Conditions for the player to be able to plant a seed
+        ///1: He is holding a tool of type SeedData
+        ///2: The Land State must be either watered or farmland
+        ///3. There isn't already a crop that has been planted
+        if (seedTool != null && landStatus != LandStatus.Soil && cropPlanted == null)
+        {
+            //Instantiate the crop object parented to the land
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            //Move the crop object to the top of the land gameobject
+            cropObject.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+
+            //Access the CropBehaviour of the crop we're going to plant
+            cropPlanted = cropObject.GetComponent<CropBehaviour>();
+            //Plant it with the seed's information
+            cropPlanted.Plant(seedTool);
+
         }
     }
 

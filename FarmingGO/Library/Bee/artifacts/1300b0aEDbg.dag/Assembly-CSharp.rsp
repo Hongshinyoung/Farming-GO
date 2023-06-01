@@ -353,6 +353,13 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/Joystick Pack/Examples/JoystickPlayerExample.cs"
+"Assets/Joystick Pack/Examples/JoystickSetterExample.cs"
+"Assets/Joystick Pack/Scripts/Base/Joystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
+"Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CropBehaviour.cs"
 "Assets/Scripts/EquipmentData.cs"
@@ -373,7 +380,6 @@
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"
 "Assets/Scripts/UIManager.cs"
-"Assets/Scripts/VirtualJoystick.cs"
 -langversion:9.0
 
 /deterministic

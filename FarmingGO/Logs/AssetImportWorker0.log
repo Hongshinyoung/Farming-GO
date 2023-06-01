@@ -1,10 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
-<<<<<<< HEAD
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ko' Physical Memory: 16296 MB
-=======
 OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ko' Physical Memory: 15996 MB
->>>>>>> KimYoungGyun
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,15 +11,6 @@ C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-<<<<<<< HEAD
-D:/OneDrive/문서/GitHub/Farming-GO/FarmingGO
--logFile
-Logs/AssetImportWorker0.log
--srvPort
-2073
-Successfully changed project path to: D:/OneDrive/문서/GitHub/Farming-GO/FarmingGO
-D:/OneDrive/문서/GitHub/Farming-GO/FarmingGO
-=======
 C:/Users/rbs61/OneDrive/문서/GitHub/Farming-GO2/FarmingGO
 -logFile
 Logs/AssetImportWorker0.log
@@ -31,7 +18,6 @@ Logs/AssetImportWorker0.log
 65183
 Successfully changed project path to: C:/Users/rbs61/OneDrive/문서/GitHub/Farming-GO2/FarmingGO
 C:/Users/rbs61/OneDrive/문서/GitHub/Farming-GO2/FarmingGO
->>>>>>> KimYoungGyun
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -61,24 +47,6 @@ C:/Users/rbs61/OneDrive/문서/GitHub/Farming-GO2/FarmingGO
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-<<<<<<< HEAD
-Player connection [29256] Host "[IP] 192.168.35.64 [Port] 0 [Flags] 2 [Guid] 2429349534 [EditorId] 2429349534 [Version] 1048832 [Id] WindowsEditor(7,����) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-
-Player connection [29256] Host "[IP] 192.168.35.64 [Port] 0 [Flags] 2 [Guid] 2429349534 [EditorId] 2429349534 [Version] 1048832 [Id] WindowsEditor(7,����) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-
-Refreshing native plugins compatible for Editor in 89.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.20f1 (577897200b8b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/OneDrive/문서/GitHub/Farming-GO/FarmingGO/Assets
-GfxDevice: creating device client; threaded=0; jobified=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
-    Vendor:   NVIDIA
-    VRAM:     4017 MB
-    Driver:   31.0.15.2824
-=======
 Player connection [20244] Host "[IP] 172.40.6.191 [Port] 0 [Flags] 2 [Guid] 789967147 [EditorId] 789967147 [Version] 1048832 [Id] WindowsEditor(7,BOOK-A8L488RA04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [20244] Host "[IP] 172.40.6.191 [Port] 0 [Flags] 2 [Guid] 789967147 [EditorId] 789967147 [Version] 1048832 [Id] WindowsEditor(7,BOOK-A8L488RA04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -95,33 +63,15 @@ Direct3D:
     Vendor:   Intel
     VRAM:     7998 MB
     Driver:   30.0.101.2079
->>>>>>> KimYoungGyun
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-<<<<<<< HEAD
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
-=======
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
->>>>>>> KimYoungGyun
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-<<<<<<< HEAD
-Registered in 0.006829 seconds.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 286 ms
-Refreshing native plugins compatible for Editor in 82.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.983 seconds
-Domain Reload Profiling:
-	ReloadAssembly (984ms)
-		BeginReloadAssembly (93ms)
-=======
 Registered in 0.006784 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
@@ -133,28 +83,11 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (919ms)
 		BeginReloadAssembly (91ms)
->>>>>>> KimYoungGyun
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-<<<<<<< HEAD
-		EndReloadAssembly (782ms)
-			LoadAssemblies (91ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (581ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (352ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (83ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (95ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
-=======
 		EndReloadAssembly (737ms)
 			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -169,62 +102,12 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (78ms)
 				ProcessInitializeOnLoadMethodAttributes (38ms)
->>>>>>> KimYoungGyun
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-<<<<<<< HEAD
-Registered in 0.004882 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\OneDrive\문서\GitHub\Farming-GO\FarmingGO\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\OneDrive\문서\GitHub\Farming-GO\FarmingGO\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-Package Manager log level set to [2]
-- Completed reload, in  1.051 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1052ms)
-		BeginReloadAssembly (133ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (810ms)
-			LoadAssemblies (102ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (379ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3232 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (87.9 KB). Loaded Objects now: 3682.
-Memory consumption went from 118.6 MB to 118.6 MB.
-Total: 3.143800 ms (FindLiveObjects: 0.286900 ms CreateObjectMapping: 0.187000 ms MarkObjects: 2.576200 ms  DeleteObjects: 0.092500 ms)
-=======
 Registered in 0.006332 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\rbs61\OneDrive\문서\GitHub\Farming-GO2\FarmingGO\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -272,100 +155,15 @@ Unloading 3232 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 37 unused Assets / (87.9 KB). Loaded Objects now: 3682.
 Memory consumption went from 118.6 MB to 118.5 MB.
 Total: 2.944700 ms (FindLiveObjects: 0.205800 ms CreateObjectMapping: 0.092800 ms MarkObjects: 2.546700 ms  DeleteObjects: 0.098100 ms)
->>>>>>> KimYoungGyun
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-<<<<<<< HEAD
-=======
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
->>>>>>> KimYoungGyun
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-<<<<<<< HEAD
-========================================================================
-Received Import Request.
-  Time since last request: 94645.205000 seconds.
-  path: Assets/Farmland/Watered Land/brown_mud_leaves_01_disp_4k.png
-  artifactKey: Guid(86181cfffdc080540a48180b46c9e7b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farmland/Watered Land/brown_mud_leaves_01_disp_4k.png using Guid(86181cfffdc080540a48180b46c9e7b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84891f4e4418b7186a5e1be2e1972e85') in 0.121340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Farmland/Dirt/Materials/Wilted Plant.mat
-  artifactKey: Guid(8ec25a616f16af54f831f6e0ea92f0f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farmland/Dirt/Materials/Wilted Plant.mat using Guid(8ec25a616f16af54f831f6e0ea92f0f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d0d7fb13708c3e419a4cd701d73fe3') in 0.226519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Farmland/Watered Land/brown_mud_leaves_01_rough_4k.jpg
-  artifactKey: Guid(282d75146e7c9fb47877d2cec58d98cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farmland/Watered Land/brown_mud_leaves_01_rough_4k.jpg using Guid(282d75146e7c9fb47877d2cec58d98cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '955cb57186c51c6435c254431e1d8dd2') in 0.050647 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Farmland/Tilled Land/park_dirt_diff_4k.jpg
-  artifactKey: Guid(cc1d3428162cac143a86a039e720a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farmland/Tilled Land/park_dirt_diff_4k.jpg using Guid(cc1d3428162cac143a86a039e720a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14283f435d976dbb44563891ec4e5bfc') in 0.072367 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Farmland/Dirt/Materials/dirt_floor_diff_4k.mat
-  artifactKey: Guid(fc22cbf4a79e61f41a160b0faf01d3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farmland/Dirt/Materials/dirt_floor_diff_4k.mat using Guid(fc22cbf4a79e61f41a160b0faf01d3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cfead6b278872a723620064c858cfe9') in 0.179998 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Farmland/Land.prefab
-  artifactKey: Guid(b8fb4ed513f0eba48b17f98e6d59f0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farmland/Land.prefab using Guid(b8fb4ed513f0eba48b17f98e6d59f0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90388fb23766b0535c419ce56bea82c8') in 0.156568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Prefabs/Joystick.prefab
-  artifactKey: Guid(baa29b27ed5edec49a9dfaa3ecfa08c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Joystick.prefab using Guid(baa29b27ed5edec49a9dfaa3ecfa08c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb91722f3d6fbaeb2579d54f7bfc3204') in 0.016267 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.142317 seconds.
-  path: Assets/LowPolyFarmLite/Prefabs
-  artifactKey: Guid(2c1d683bd08bd8a4bb1c3c6496009f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyFarmLite/Prefabs using Guid(2c1d683bd08bd8a4bb1c3c6496009f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20fb3e8e90ca6db92d15bd46f40cff25') in 0.006849 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.040554 seconds.
-  path: Assets/LowPolyFarmLite/Prefabs/Box_01.prefab
-  artifactKey: Guid(d26dc1241d332c342b898a57f1164932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyFarmLite/Prefabs/Box_01.prefab using Guid(d26dc1241d332c342b898a57f1164932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1635e7a3b69acfbf886904cfa3efa1f4') in 0.022297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LowPolyFarmLite/Prefabs/TomatoPlant_01.prefab
-  artifactKey: Guid(78da2ace1ab76ce478600ebe37fa10fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyFarmLite/Prefabs/TomatoPlant_01.prefab using Guid(78da2ace1ab76ce478600ebe37fa10fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b713737dac5c51afb939c2e6e59d3411') in 0.030580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/LowPolyFarmLite/Prefabs/Tree_04.prefab
-  artifactKey: Guid(bae468b3a6b9ea141967f3cfbe601352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyFarmLite/Prefabs/Tree_04.prefab using Guid(bae468b3a6b9ea141967f3cfbe601352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274072f50ef88012e0ff5d60a50a418a') in 0.029308 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/LowPolyFarmLite/Prefabs/Rock_04.prefab
-  artifactKey: Guid(748ca274b89873247873cee26d353629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyFarmLite/Prefabs/Rock_04.prefab using Guid(748ca274b89873247873cee26d353629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15dc479d94c3fc8fe5d4051bf625a7c') in 0.028023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LowPolyFarmLite/Prefabs/Tomato_03.prefab
-  artifactKey: Guid(fd8e0760db14a534a89257f68a4f2a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyFarmLite/Prefabs/Tomato_03.prefab using Guid(fd8e0760db14a534a89257f68a4f2a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adefc06b90ea43fc6a1d2caf8c221554') in 0.028050 seconds 
-=======
->>>>>>> KimYoungGyun

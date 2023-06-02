@@ -2420,7 +2420,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -2946,7 +2947,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -4605,7 +4607,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -4828,7 +4831,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -5084,7 +5088,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -8620,7 +8625,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -10575,7 +10581,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus
@@ -11219,7 +11226,8 @@ PrefabInstance:
         type: 3}
       propertyPath: cropPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6744136829968289315, guid: d39bb5f52328bcc419c88ff8e452289b,
+        type: 3}
     - target: {fileID: 3252736623185918372, guid: b8fb4ed513f0eba48b17f98e6d59f0e2,
         type: 3}
       propertyPath: landStatus

@@ -29,7 +29,10 @@ public class UIManager : MonoBehaviour
 
     //Item info box
     public Text itemNameText;
-    public Text itemDescriptionText; 
+    public Text itemDescriptionText;
+
+    [Header("Player Stats")]
+    public Text moneyText;
 
     private void Awake()
     {
@@ -49,6 +52,7 @@ public class UIManager : MonoBehaviour
     {
         RenderInventory();
         AssignSlotIndexes();
+        RenderPlayerStats();
     }
 
     //Iterate through the slot UI elements and assign it its reference slot index
@@ -113,6 +117,11 @@ public class UIManager : MonoBehaviour
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
 
         RenderInventory();
+    }
+
+    public void RenderPlayerStats()
+    {
+        moneyText.text = PlayerStats.Money + PlayerStats.CURRENCY;
     }
 
     //Display Item info on the Item infobox

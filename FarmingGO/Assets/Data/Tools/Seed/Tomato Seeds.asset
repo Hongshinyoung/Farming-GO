@@ -15,6 +15,7 @@ MonoBehaviour:
   description: "\uD1A0\uB9C8\uD1A0\uAC00 \uC790\uB77C\uB294 \uC528\uC557"
   thumbnail: {fileID: 0}
   gameModel: {fileID: 0}
+  cost: 150
   daysToGrow: 9
   cropToYield: {fileID: 11400000, guid: af9587db3d912fc43aa263445e09cf29, type: 2}
   seeding: {fileID: 3255355147461978485, guid: 28ed1ddace5e72d46a934dcad1b1440a, type: 3}

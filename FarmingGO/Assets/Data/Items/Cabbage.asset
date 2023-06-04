@@ -16,3 +16,4 @@ MonoBehaviour:
   thumbnail: {fileID: -1597808604, guid: 4fb8dcb9c427c62478830363cae9caa6, type: 3}
   gameModel: {fileID: 8554979865545778643, guid: 9a81aff6db3d071449d91cf8ec0d73f8,
     type: 3}
+  cost: 500

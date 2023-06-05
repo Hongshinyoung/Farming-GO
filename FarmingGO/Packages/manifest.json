@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.ptc.vuforia.engine": "file:C:/test/test-main/test-main/ObjectDetection/Library/PackageCache/com.ptc.vuforia.engine@c4d4273eb1b9",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.adaptiveperformance.samsung.android": "5.0.0",
     "com.unity.collab-proxy": "2.0.1",
@@ -12,6 +13,7 @@
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.8.0",
+    "com.unity.xr.management": "4.2.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46c8eed950470747b4a5b822d517191, type: 3}
   m_Name: Carrot Seed
   m_EditorClassIdentifier: 
-  description: 
-  thumbnail: {fileID: 0}
+  description: "\uB2F9\uADFC \uC528\uC557"
+  thumbnail: {fileID: -1744556520, guid: 4fb8dcb9c427c62478830363cae9caa6, type: 3}
   gameModel: {fileID: 0}
   cost: 100
   daysToGrow: 2

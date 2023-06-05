@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tomato Seeds
   m_EditorClassIdentifier: 
   description: "\uD1A0\uB9C8\uD1A0\uAC00 \uC790\uB77C\uB294 \uC528\uC557"
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: -105763006, guid: 4fb8dcb9c427c62478830363cae9caa6, type: 3}
   gameModel: {fileID: 0}
   cost: 150
   daysToGrow: 9

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46c8eed950470747b4a5b822d517191, type: 3}
   m_Name: Corn Seed
   m_EditorClassIdentifier: 
-  description: 
+  description: "\uC625\uC218\uC218 \uC528\uC557"
   thumbnail: {fileID: 0}
   gameModel: {fileID: 0}
   cost: 300

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46c8eed950470747b4a5b822d517191, type: 3}
   m_Name: Pumpkin Seed
   m_EditorClassIdentifier: 
-  description: 
-  thumbnail: {fileID: 0}
+  description: "\uD638\uBC15 \uC528\uC557"
+  thumbnail: {fileID: 676728186, guid: 4fb8dcb9c427c62478830363cae9caa6, type: 3}
   gameModel: {fileID: 0}
   cost: 500
   daysToGrow: 5

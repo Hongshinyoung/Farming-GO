@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         Move();
 
         //Runs the function that handles all interaction
-        Interact();
+        //Interact();
 
         if (Input.GetKey(KeyCode.RightBracket))
         {
@@ -46,23 +46,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Interact()
-    {
-        //Tool interaction
-        if (Input.GetButtonDown("Fire1"))
-        {
-            //Interact
-            playerInteraction.Interact();
-        }
+    //public void Interact()
+    //{
+    //    //Tool interaction
+    //    if (Input.GetButtonDown("Fire1"))
+    //    {
+    //        //Interact
+    //        playerInteraction.Interact();
+    //    }
 
-        //Item interaction
-        if (Input.GetButtonDown("Fire2"))
-        {
-            playerInteraction.ItemInteract();
-        }
+    //    //Item interaction
+    //    if (Input.GetButtonDown("Fire2"))
+    //    {
+    //        playerInteraction.ItemInteract();
+    //    }
 
-        //TODO: Set up item interaction
-    }
+    //    //TODO: Set up item interaction
+    //}
 
     public void Move()
     {

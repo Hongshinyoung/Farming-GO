@@ -7,7 +7,6 @@ countries.
 ==============================================================================*/
 
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using Vuforia;
@@ -170,9 +169,6 @@ public class DefaultObserverEventHandler : MonoBehaviour
             var rendererComponents = mObserverBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mObserverBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mObserverBehaviour.GetComponentsInChildren<Canvas>(true);
-
-            //object name
-            
 
             // Enable rendering:
             foreach (var component in rendererComponents)

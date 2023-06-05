@@ -9,5 +9,15 @@ public class SeedData : ItemData
 
     public ItemData cropToYield;
 
+<<<<<<< Updated upstream
     public GameObject seeding;
+=======
+    public GameObject seedling;
+
+    [Header("Regrowable")]
+
+    public bool regrowable;
+
+    public int dayToRegrow;
+>>>>>>> Stashed changes
 }

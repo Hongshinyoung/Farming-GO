@@ -368,8 +368,18 @@
 "Assets/Scripts/ItemData.cs"
 "Assets/Scripts/ITimeTracker.cs"
 "Assets/Scripts/Land.cs"
+<<<<<<< Updated upstream
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerInteraction.cs"
+=======
+"Assets/Scripts/LandManager.cs"
+"Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Player/PlayerInteraction.cs"
+"Assets/Scripts/Player/PlayerStats.cs"
+"Assets/Scripts/RegrowableHarvestBehaviour.cs"
+"Assets/Scripts/Save/CropSaveState.cs"
+"Assets/Scripts/Save/LandSaveState.cs"
+>>>>>>> Stashed changes
 "Assets/Scripts/SeedData.cs"
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"

@@ -8,7 +8,9 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance { get; private set; }
     [Header("Status Bar")]
     //Tool equip slot on the status bar
-    public Image toolEquipSlot; 
+    public Image toolEquipSlot;
+
+    public Text toolQuantityText;
 
 
     [Header("Inventory System")]
@@ -68,11 +70,8 @@ public class UIManager : MonoBehaviour
     //Render the inventory screen to reflect the Player's Inventory. 
     public void RenderInventory()
     {
-        //Get the inventory tool slots from Inventory Manager
-        ItemData[] inventoryToolSlots = InventoryManager.Instance.tools;
-
-        //Get the inventory item slots from Inventory Manager
-        ItemData[] inventoryItemSlots = InventoryManager.Instance.items;
+        ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
+        ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
 
         //Render the Tool section
         RenderInventoryPanel(inventoryToolSlots, toolSlots);
@@ -81,11 +80,13 @@ public class UIManager : MonoBehaviour
         RenderInventoryPanel(inventoryItemSlots, itemSlots);
 
         //Render the equipped slots
-        toolHandSlot.Display(InventoryManager.Instance.equippedTool);
-        itemHandSlot.Display(InventoryManager.Instance.equippedItem);
+        toolHandSlot.Display(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryType.Tool));
+        itemHandSlot.Display(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryType.Item));
 
         //Get Tool Equip from InventoryManager
-        ItemData equippedTool = InventoryManager.Instance.equippedTool;
+        ItemData equippedTool = InventoryManager.Instance.GetEquippedSlotItem(InventorySlot.InventoryType.Tool);
+
+        toolQuantityText.text = "";
 
         //Check if there is an item to display
         if (equippedTool != null)
@@ -95,6 +96,12 @@ public class UIManager : MonoBehaviour
 
             toolEquipSlot.gameObject.SetActive(true);
 
+            int quantity = InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryType.Tool).quantity;
+            if(quantity > 1)
+            {
+                toolQuantityText.text = quantity.ToString();
+            }
+
             return;
         }
 
@@ -102,7 +109,7 @@ public class UIManager : MonoBehaviour
     }
 
     //Iterate through a slot in a section and display them in the UI
-    void RenderInventoryPanel(ItemData[] slots, InventorySlot[] uiSlots)
+    void RenderInventoryPanel(ItemSlotData[] slots, InventorySlot[] uiSlots)
     {
         for (int i = 0; i < uiSlots.Length; i++)
         {

@@ -7,6 +7,12 @@ TagManager:
   - FieldItem
   - Land
   - Item
+  - Sheep
+  - Cow
+  - Chicken
+  - Pig
+  - Ground
+  - Grass
   layers:
   - Default
   - TransparentFX

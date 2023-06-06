@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638215767214280460
-    m_Hash: 1366754321
+      ticks: 638215800244230631
+    m_Hash: 619973991
   m_LockFileStatus:
     m_FilePath: C:/Farming-GO/FarmingGO/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638215767284491945
-    m_Hash: 2094273913
+      ticks: 638215800244230631
+    m_Hash: 76375987
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

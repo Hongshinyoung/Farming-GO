@@ -14,9 +14,9 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 22
+        minSdkVersion 26
         targetSdkVersion 30
-        applicationId 'com.DefaultCompany.FarmingGO'
+        applicationId 'com.FarmingGO.FarmingGO'
         ndk {
             abiFilters 'armeabi-v7a'
         }

@@ -394,6 +394,7 @@
 "Assets/Scripts/InventorySlot.cs"
 "Assets/Scripts/Item.cs"
 "Assets/Scripts/ItemData.cs"
+"Assets/Scripts/ItemSlotData.cs"
 "Assets/Scripts/ITimeTracker.cs"
 "Assets/Scripts/Land.cs"
 "Assets/Scripts/PlayerController.cs"
@@ -405,6 +406,7 @@
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/SendToInven.cs"
 -langversion:9.0
 
 /deterministic

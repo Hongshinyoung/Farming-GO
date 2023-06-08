@@ -9,14 +9,14 @@ public class InventoryManager : MonoBehaviour
     private void Awake()
     {
         //If there is more than one instance, destroy the extra
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(this);
         }
         else
         {
             //Set the static instance to this instance
-            Instance = this; 
+            Instance = this;
         }
     }
 
@@ -26,7 +26,7 @@ public class InventoryManager : MonoBehaviour
     private ItemSlotData[] toolSlots = new ItemSlotData[20];
     //Tool in the player's hand
     [SerializeField]
-    private ItemSlotData equippedToolSlot = null; 
+    private ItemSlotData equippedToolSlot = null;
 
     [Header("Items")]
     //Item Slots
@@ -164,18 +164,18 @@ public class InventoryManager : MonoBehaviour
     public void RenderHand()
     {
         //Reset objects on the hand
-        if(handPoint.childCount > 0)
+        if (handPoint.childCount > 0)
         {
             Destroy(handPoint.GetChild(0).gameObject);
         }
 
         //Check if the player has anything equipped
-        if(SlotEquipped(InventorySlot.InventoryType.Item))
+        if (SlotEquipped(InventorySlot.InventoryType.Item))
         {
             //Instantiate the game model on the player's hand and put it on the scene
             Instantiate(GetEquippedSlotItem(InventorySlot.InventoryType.Item).gameModel, handPoint);
         }
-        
+
     }
 
     //Inventory Slot Data 
@@ -213,9 +213,9 @@ public class InventoryManager : MonoBehaviour
     {
         if (inventoryType == InventorySlot.InventoryType.Item)
         {
-            return ! equippedItemSlot.IsEmpty();
+            return !equippedItemSlot.IsEmpty();
         }
-        return ! equippedToolSlot.IsEmpty();
+        return !equippedToolSlot.IsEmpty();
     }
 
     public bool IsTool(ItemData item)
@@ -316,12 +316,12 @@ public class InventoryManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -35,11 +35,7 @@ public class DebugToScreen : MonoBehaviour
 
     void OnGUI()
     {
-        //if(myLog == "Target status: Bottle TRACKED -- NORMAL")
         GUILayout.Label(myLog);
-        //if(myLog == "Target status: Bottle NO_POSE -- NOT_OBSERVED")
-        //GUILayout.Label(myLog);
-
 
     }
 }

@@ -70,13 +70,10 @@ public class LandManager : MonoBehaviour
             landPlots.Add(land);
 
             //Create a corresponding LandSaveState
-            landData.Add(new LandSaveState()); 
+            landData.Add(new LandSaveState());
 
             //Assign it an id based on its index
-            if(landPlots != null)
-            {
-                land.id = landPlots.Count - 1;
-            }
+            land.id = landPlots.Count - 1;
         }
     }
 

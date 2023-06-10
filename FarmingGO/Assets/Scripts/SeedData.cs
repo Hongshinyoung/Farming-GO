@@ -9,7 +9,7 @@ public class SeedData : ItemData
 
     public ItemData cropToYield;
 
-    public GameObject seeding;
+    public GameObject seedling;
 
     [Header("Regrowable")]
 

@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CameraScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scripts/Scenes/PlayerHome.unity
+    guid: 3f115fa42fe3dda4a972f3035de481a6
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 66c210db4e655ec4cba95af49995170c,
       type: 2}

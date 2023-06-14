@@ -9,7 +9,7 @@ public class YesNoPrompt : MonoBehaviour
     [SerializeField]
     Text promptText;
     Action onYesSelected = null;
-
+    
     public void CreatePrompt(string message, Action onYesSelected)
     {
         this.onYesSelected = onYesSelected;
@@ -18,13 +18,13 @@ public class YesNoPrompt : MonoBehaviour
 
     public void Answer(bool yes)
     {
-        if (yes && onYesSelected != null)
+        if(yes && onYesSelected != null)
         {
             onYesSelected();
         }
 
         onYesSelected = null;
-
         gameObject.SetActive(false);
+
     }
 }

@@ -372,6 +372,7 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/VuforiaEditorScripts.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/VuforiaScripts.ref.dll"
+"Assets/CaptureButton.cs"
 "Assets/DebugToScreen.cs"
 "Assets/Easy Primitive Animals/FarmEdition/Scripts/AnimalController.cs"
 "Assets/Easy Primitive Animals/FarmEdition/Scripts/RotateStand.cs"
@@ -383,6 +384,8 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/ObjectRecognition.cs"
+"Assets/ScreenShut.cs"
+"Assets/Scripts/Buying and Selling/ShippingBin.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CropBehaviour.cs"
 "Assets/Scripts/EquipmentData.cs"
@@ -414,6 +417,7 @@
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/Scripts/YesNoPrompt.cs"
 "Assets/SendToInven.cs"
 -langversion:9.0
 

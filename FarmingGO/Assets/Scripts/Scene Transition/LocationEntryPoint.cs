@@ -15,11 +15,24 @@ public class LocationEntryPoint : MonoBehaviour
             Debug.Log("´ê");
             SwitchScene(PlayerHome);
         }
-    }   
+    }
 
 
     public void SwitchScene(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
     }
+
+    //[SerializeField]
+    //SceneTransitionManager.Location locationToSwitch;
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    //Check if the collider belongs to the player
+    //    if (other.tag == "Player")
+    //    {
+    //        //Switch scenes to the location of the entry point
+    //        SceneTransitionManager.Instance.SwitchLocation(locationToSwitch);
+    //    }
+    //}
 }

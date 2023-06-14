@@ -33,6 +33,9 @@ public class UIManager : MonoBehaviour
     public Text itemNameText;
     public Text itemDescriptionText;
 
+    [Header("Yes No Prompt")]
+    public YesNoPrompt yesNoPrompt;
+
     [Header("Player Stats")]
     public Text moneyText;
 
@@ -57,6 +60,12 @@ public class UIManager : MonoBehaviour
         RenderPlayerStats();
     }
 
+    public void TriggerYesNoPrompt(string message, System.Action onYesCallback)
+    {
+        yesNoPrompt.gameObject.SetActive(true);
+
+        yesNoPrompt.CreatePrompt(message, onYesCallback);
+    }
     //Iterate through the slot UI elements and assign it its reference slot index
     public void AssignSlotIndexes()
     {

@@ -383,6 +383,7 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/ObjectRecognition.cs"
+"Assets/Scripts/Buying and Selling/ShippingBin.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CropBehaviour.cs"
 "Assets/Scripts/EquipmentData.cs"
@@ -414,6 +415,7 @@
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/Scripts/YesNoPrompt.cs"
 "Assets/SendToInven.cs"
 -langversion:9.0
 

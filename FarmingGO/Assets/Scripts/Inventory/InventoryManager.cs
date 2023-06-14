@@ -326,5 +326,4 @@ public class InventoryManager : MonoBehaviour
     {
 
     }
-
 }

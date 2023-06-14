@@ -389,7 +389,6 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CropBehaviour.cs"
 "Assets/Scripts/EquipmentData.cs"
-"Assets/Scripts/EventItemLoad.cs"
 "Assets/Scripts/GameTimestamp.cs"
 "Assets/Scripts/Header_Movable.cs"
 "Assets/Scripts/InteractableObject.cs"

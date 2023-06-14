@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
-using UnityEngine.UI;
 
 namespace SimpleCapture
 {
@@ -38,10 +37,8 @@ namespace SimpleCapture
                 Directory.CreateDirectory(path);
             }
 
-            // 파일명 생성.
-            string[] files = Directory.GetFiles(path, "*.png");
-            int fileCount = files.Length;
-            string name = path + (fileCount + 1).ToString() + ".png";
+            // 파일명.
+            string name = path + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
 
             // 텍스쳐 생성.
             TextureFormat format = transparent ? TextureFormat.ARGB32 : TextureFormat.RGB24;

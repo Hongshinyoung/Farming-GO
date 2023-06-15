@@ -20,10 +20,10 @@ public class EventItemLoad : MonoBehaviour
             return;
         }
 
-        LoadAndDisplayImage();
+        LoadAndDisplayLatestImage();
     }
 
-    private void LoadAndDisplayImage()
+    private void LoadAndDisplayLatestImage()
     {
         // Load the PNG files in the specified directory
         string[] files = Directory.GetFiles(imagePath, "*.png");
@@ -33,10 +33,10 @@ public class EventItemLoad : MonoBehaviour
             return;
         }
 
-        // Sort the files based on their names (assuming the names are numbers)
-        System.Array.Sort(files);
+        // Sort the files based on their last write time
+        System.Array.Sort(files, (a, b) => File.GetLastWriteTime(b).CompareTo(File.GetLastWriteTime(a)));
 
-        // Get the first PNG file in the directory
+        // Get the most recently modified PNG file in the directory
         string filePath = files[0];
 
         byte[] bytes = File.ReadAllBytes(filePath);

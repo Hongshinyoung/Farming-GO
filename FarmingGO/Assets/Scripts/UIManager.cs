@@ -38,7 +38,8 @@ public class UIManager : MonoBehaviour
 
     [Header("Player Stats")]
     public Text moneyText;
-
+    [Header("Shop")]
+    public ShopListingManager shopListingManager;
     private void Awake()
     {
         //If there is more than one instance, destroy the extra
@@ -138,6 +139,12 @@ public class UIManager : MonoBehaviour
     public void RenderPlayerStats()
     {
         moneyText.text = PlayerStats.Money + PlayerStats.CURRENCY;
+    }
+
+    public void OpenShop(List<ItemData> shopItems)
+    {
+        shopListingManager.gameObject.SetActive(true);
+        shopListingManager.RenderShop(shopItems);
     }
 
     //Display Item info on the Item infobox

@@ -29,6 +29,7 @@ public class InventoryManager : MonoBehaviour
     //Tool in the player's hand
     [SerializeField]
     private ItemSlotData equippedToolSlot = null;
+    public Transform handPoint2;
 
     [Header("Items")]
     //Item Slots
@@ -88,6 +89,10 @@ public class InventoryManager : MonoBehaviour
         {
             RenderHand();
         }
+        if (inventoryType == InventorySlot.InventoryType.Tool)
+        {
+            RenderHand();
+        }
 
         //Update the changes to the UI
         UIManager.Instance.RenderInventory();
@@ -129,7 +134,7 @@ public class InventoryManager : MonoBehaviour
         }
 
         //Update the changes in the scene
-        if (inventoryType == InventorySlot.InventoryType.Item)
+        if (inventoryType == InventorySlot.InventoryType.Item && inventoryType == InventorySlot.InventoryType.Tool)
         {
             RenderHand();
         }
@@ -193,20 +198,26 @@ public class InventoryManager : MonoBehaviour
     //Render the player's equipped item in the scene
     public void RenderHand()
     {
-        //Reset objects on the hand
+        // Reset objects on the hand
         if (handPoint.childCount > 0)
         {
             Destroy(handPoint.GetChild(0).gameObject);
         }
 
-        //Check if the player has anything equipped
+        // Check if the player has any item or tool equipped
         if (SlotEquipped(InventorySlot.InventoryType.Item))
         {
-            //Instantiate the game model on the player's hand and put it on the scene
+            // Instantiate the game model of the equipped item and put it on the scene
             Instantiate(GetEquippedSlotItem(InventorySlot.InventoryType.Item).gameModel, handPoint);
         }
 
+        if (SlotEquipped(InventorySlot.InventoryType.Tool))
+        {
+            // Instantiate the game model of the equipped tool and put it on the scene
+            Instantiate(GetEuippedSlotTool(InventorySlot.InventoryType.Tool).gameModel, handPoint);
+        }
     }
+
 
     //Inventory Slot Data 
     #region Gets and Checks
@@ -216,6 +227,15 @@ public class InventoryManager : MonoBehaviour
         if (inventoryType == InventorySlot.InventoryType.Item)
         {
             return equippedItemSlot.itemData;
+        }
+        return equippedToolSlot.itemData;
+    }
+
+    public ItemData GetEuippedSlotTool(InventorySlot.InventoryType inventoryType)
+    {
+        if(inventoryType == InventorySlot.InventoryType.Tool)
+        {
+            return equippedToolSlot.itemData;
         }
         return equippedToolSlot.itemData;
     }

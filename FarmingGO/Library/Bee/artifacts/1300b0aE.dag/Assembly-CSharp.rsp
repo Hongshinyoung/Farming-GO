@@ -419,6 +419,7 @@
 "Assets/Scripts/Scene Transition/StartPoint.cs"
 "Assets/Scripts/SceneChange.cs"
 "Assets/Scripts/SeedData.cs"
+"Assets/Scripts/ShopArea.cs"
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/TimeUI.cs"
 "Assets/Scripts/UI/MainMenu.cs"

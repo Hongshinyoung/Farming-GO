@@ -82,7 +82,7 @@ namespace SimpleCapture
             byte[] bytes = screenShot.EncodeToPNG();
             File.WriteAllBytes(name, bytes);
 
-            AssetDatabase.Refresh();
+            //AssetDatabase.Refresh();
         }
     }
 }

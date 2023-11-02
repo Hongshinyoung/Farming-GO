@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    public string SceneName;
     public void SwitchScene(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
+    }
+
+    public void OnApplicationQuit()
+    {
+        OnApplicationQuit();
     }
 }

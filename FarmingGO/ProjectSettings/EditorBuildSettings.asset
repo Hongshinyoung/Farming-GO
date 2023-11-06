@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scripts/Scenes/InGame.unity
+    path: Assets/Scenes/InGame.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
-    path: Assets/Scripts/Scenes/CameraScene.unity
+    path: Assets/Scenes/CameraScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scripts/Scenes/PlayerHome.unity
+    path: Assets/Scenes/PlayerHome.unity
     guid: 3f115fa42fe3dda4a972f3035de481a6
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 66c210db4e655ec4cba95af49995170c,

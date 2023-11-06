@@ -1,0 +1,16 @@
+{
+    "quests": [
+        {
+            "name": "Quest 1",
+            "description": "인벤토리에서 괭이를 장착해 보세요.",
+            "reward": 100,
+            "completed": false
+        },
+        {
+            "name": "Quest 2",
+            "description": "밭 위에서 괭이를 사용해 밭을 경작해 보세요.",
+            "reward": 200,
+            "completed": false
+        }
+    ]
+}

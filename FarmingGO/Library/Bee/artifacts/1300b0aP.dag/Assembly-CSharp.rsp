@@ -347,6 +347,8 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerInteraction.cs"
 "Assets/Scripts/PlayerStats.cs"
+"Assets/Scripts/Quest/QuestComplete.cs"
+"Assets/Scripts/Quest/QuestLoader.cs"
 "Assets/Scripts/RegrowableHarvestBehaviour.cs"
 "Assets/Scripts/Save/CropSaveState.cs"
 "Assets/Scripts/Save/LandSaveState.cs"

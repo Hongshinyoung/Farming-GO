@@ -718,10 +718,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AnimationCurve_Internal_Create();
 		Register_UnityEngine_AnimationCurve_Internal_Create();
 
-		//System.Single UnityEngine.AnimationCurve::Evaluate(System.Single)
-		void Register_UnityEngine_AnimationCurve_Evaluate();
-		Register_UnityEngine_AnimationCurve_Evaluate();
-
 		//System.Void UnityEngine.AnimationCurve::Internal_Destroy(System.IntPtr)
 		void Register_UnityEngine_AnimationCurve_Internal_Destroy();
 		Register_UnityEngine_AnimationCurve_Internal_Destroy();
@@ -998,10 +994,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_WorldToScreenPoint_Injected();
 		Register_UnityEngine_Camera_WorldToScreenPoint_Injected();
 
-		//System.Void UnityEngine.Camera::get_backgroundColor_Injected(UnityEngine.Color&)
-		void Register_UnityEngine_Camera_get_backgroundColor_Injected();
-		Register_UnityEngine_Camera_get_backgroundColor_Injected();
-
 		//System.Void UnityEngine.Camera::get_pixelRect_Injected(UnityEngine.Rect&)
 		void Register_UnityEngine_Camera_get_pixelRect_Injected();
 		Register_UnityEngine_Camera_get_pixelRect_Injected();
@@ -1017,10 +1009,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::set_aspect(System.Single)
 		void Register_UnityEngine_Camera_set_aspect();
 		Register_UnityEngine_Camera_set_aspect();
-
-		//System.Void UnityEngine.Camera::set_backgroundColor_Injected(UnityEngine.Color&)
-		void Register_UnityEngine_Camera_set_backgroundColor_Injected();
-		Register_UnityEngine_Camera_set_backgroundColor_Injected();
 
 		//System.Void UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)
 		void Register_UnityEngine_Camera_set_clearFlags();
@@ -1822,10 +1810,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GL_LoadProjectionMatrix_Injected();
 		Register_UnityEngine_GL_LoadProjectionMatrix_Injected();
 
-		//System.Void UnityEngine.GL::MultMatrix_Injected(UnityEngine.Matrix4x4&)
-		void Register_UnityEngine_GL_MultMatrix_Injected();
-		Register_UnityEngine_GL_MultMatrix_Injected();
-
 		//System.Void UnityEngine.GL::PopMatrix()
 		void Register_UnityEngine_GL_PopMatrix();
 		Register_UnityEngine_GL_PopMatrix();
@@ -2341,10 +2325,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)
 		void Register_UnityEngine_ImageConversion_LoadImage();
 		Register_UnityEngine_ImageConversion_LoadImage();
-
-		//System.Byte[] UnityEngine.ImageConversion::EncodeToPNG(UnityEngine.Texture2D)
-		void Register_UnityEngine_ImageConversion_EncodeToPNG();
-		Register_UnityEngine_ImageConversion_EncodeToPNG();
 
 	//End Registrations for type : UnityEngine.ImageConversion
 
@@ -3281,10 +3261,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Quaternion::LookRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_LookRotation_Injected();
 		Register_UnityEngine_Quaternion_LookRotation_Injected();
-
-		//System.Void UnityEngine.Quaternion::Slerp_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
-		void Register_UnityEngine_Quaternion_Slerp_Injected();
-		Register_UnityEngine_Quaternion_Slerp_Injected();
 
 	//End Registrations for type : UnityEngine.Quaternion
 

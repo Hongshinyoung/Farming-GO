@@ -11,8 +11,13 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(SceneName);
     }
 
-    public void OnApplicationQuit()
+    public void OnAppQuit()
     {
-        OnApplicationQuit();
+        Application.Quit();
+    }
+
+    public void onclick()
+    {
+        Debug.Log("Å¬¸¯");
     }
 }

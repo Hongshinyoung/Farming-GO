@@ -21,18 +21,6 @@
     <uses-feature
         android:name="android.hardware.vulkan.version"
         android:required="false" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera.front"
-        android:required="false" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -44,17 +32,6 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
-    <queries>
-        <package android:name="com.google.ar.core" />
-    </queries>
-    <!--
-        Required by Vuforia: Add this permission to access IMU sensors at high rate
-        for device tracker functionality on Android 12+.
-    -->
-    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" /> <!-- Required by Vuforia: Add this permission to allow checking of network. -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by Vuforia: Add this permission to allow opening network sockets. -->
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:extractNativeLibs="true"
@@ -113,29 +90,6 @@
         <meta-data
             android:name="com.unity.androidnotifications.exact_scheduling"
             android:value="0" />
-        <meta-data
-            android:name="com.google.ar.core"
-            android:value="optional" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
-        <meta-data
-            android:name="com.google.ar.core.min_apk_version"
-            android:value="202940000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
-        <activity
-            android:name="com.google.ar.core.InstallActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
-
-        <provider
-            android:name="com.vuforia.engine.app.VuforiaContentProvider"
-            android:authorities="com.FarmingGO.FarmingGO.vuforia.share"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
-        </provider>
     </application>
 
 </manifest>

@@ -298,8 +298,6 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
--r:"C:/UnityProjects/Farming-GO/FarmingGO/Library/PackageCache/com.ptc.vuforia.engine@c4d4273eb1b9/Vuforia/Plugins/Managed/Android/Vuforia.Unity.Engine.dll"
--r:"C:/UnityProjects/Farming-GO/FarmingGO/Library/PackageCache/com.ptc.vuforia.engine@c4d4273eb1b9/Vuforia/Plugins/Managed/Android/Vuforia.Unity.Wrapper.dll"
 -r:"C:/UnityProjects/Farming-GO/FarmingGO/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"

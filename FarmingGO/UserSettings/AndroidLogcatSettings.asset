@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "R3CR30AVVFK",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R3CR30AVVFK",
+        "name": "com.FarmingGO.FarmingGO",
+        "processId": 23848,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -24,6 +24,12 @@
             "deviceId": "R3CR30AVVFK",
             "name": "com.FarmingGO.FarmingGO",
             "processId": 31310,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR30AVVFK",
+            "name": "com.FarmingGO.FarmingGO",
+            "processId": 23848,
             "exited": false
         }
     ],

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig>
-  <Tracking>
-    <ImageTarget name="Iphone" size="0.100000 0.168498" />
-    <ImageTarget name="Mouse2" size="400.000000 533.333313" />
-    <ImageTarget name="Bottle" size="600.000000 800.000000" />
-  </Tracking>
-</QCARConfig>

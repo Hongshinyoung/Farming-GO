@@ -4,23 +4,6 @@
             "outputFile": "C:\\UnityProjects\\Farming-GO\\FarmingGO\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gtd40\\.gradle\\caches\\transforms-2\\files-2.1\\16e84a82246e39f10f24b4734dc13f8e\\core-1.22.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8",
-                        "startColumns": "0,0,0,0,0",
-                        "startOffsets": "161,208,259,381,503",
-                        "endColumns": "46,50,121,121,83",
-                        "endOffsets": "207,258,380,502,586"
-                    },
-                    "to": {
-                        "startLines": "8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "356,407,462,588,714",
-                        "endColumns": "50,54,125,125,87",
-                        "endOffsets": "402,457,583,709,797"
-                    }
-                },
-                {
                     "source": "C:\\UnityProjects\\Farming-GO\\FarmingGO\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
@@ -28,23 +11,6 @@
                         "startOffsets": "55,101,158,214,263,309",
                         "endColumns": "45,56,55,48,45,46",
                         "endOffsets": "96,153,209,258,304,351"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\gtd40\\.gradle\\caches\\transforms-2\\files-2.1\\bf0d6f501e54d918793e7ebae5b7b210\\VuforiaEngine\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "79",
-                        "endOffsets": "130"
-                    },
-                    "to": {
-                        "startLines": "15",
-                        "startColumns": "4",
-                        "startOffsets": "917",
-                        "endColumns": "79",
-                        "endOffsets": "992"
                     }
                 },
                 {
@@ -57,11 +23,11 @@
                         "endOffsets": "97,164"
                     },
                     "to": {
-                        "startLines": "13,14",
+                        "startLines": "8,9",
                         "startColumns": "4,4",
-                        "startOffsets": "802,849",
+                        "startOffsets": "356,403",
                         "endColumns": "46,67",
-                        "endOffsets": "844,912"
+                        "endOffsets": "398,466"
                     }
                 },
                 {
@@ -75,12 +41,12 @@
                         "endOffsets": "286,188,513"
                     },
                     "to": {
-                        "startLines": "16,18,21",
+                        "startLines": "10,12,15",
                         "startColumns": "4,4,4",
-                        "startOffsets": "997,1097,1235",
-                        "endLines": "17,20,24",
+                        "startOffsets": "471,571,709",
+                        "endLines": "11,14,18",
                         "endColumns": "8,8,8",
-                        "endOffsets": "1092,1230,1457"
+                        "endOffsets": "566,704,931"
                     }
                 }
             ]

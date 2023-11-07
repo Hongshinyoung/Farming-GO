@@ -1,4 +1,4 @@
-#Mon Nov 06 20:23:51 KST 2023
+#Tue Nov 07 23:40:20 KST 2023
 base.0=C\:\\UnityProjects\\Farming-GO\\FarmingGO\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

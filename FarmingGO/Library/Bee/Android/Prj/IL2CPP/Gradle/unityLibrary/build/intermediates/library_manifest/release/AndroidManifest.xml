@@ -13,18 +13,6 @@
     <uses-feature
         android:name="android.hardware.vulkan.version"
         android:required="false" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera.front"
-        android:required="false" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -91,9 +79,6 @@
         <meta-data
             android:name="com.unity.androidnotifications.exact_scheduling"
             android:value="0" />
-        <meta-data
-            android:name="com.google.ar.core"
-            android:value="optional" />
     </application>
 
 </manifest>

@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
         //Get interaction component
         playerInteraction = GetComponentInChildren<PlayerInteraction>();
 
+        Vector3 savedPosition = DataManager.LoadPlayerPosition();
+        transform.position = savedPosition;
+
     }
 
     // Update is called once per frame
@@ -44,6 +47,8 @@ public class PlayerController : MonoBehaviour
         {
             TimeManager.Instance.Tick();
         }
+
+        DataManager.SavePlayerPosition(transform.position);
     }
 
     //public void Interact()

@@ -8,7 +8,11 @@ public class QuestLoader : MonoBehaviour
 {
     public List<QuestData> quests = new List<QuestData>();
     public TextMeshProUGUI questText;
-    public Button yes, no;
+    public Button btn_Yes, btn_No;
+    private QuestComplete questComplete;
+    public Text quest_ING;
+
+    private int currentQuestIndex = 0; // 현재 진행 중인 퀘스트의 인덱스
 
     [System.Serializable]
     public class QuestData
@@ -37,23 +41,35 @@ public class QuestLoader : MonoBehaviour
             // JSON 데이터를 QuestDataList 객체로 파싱
             QuestDataList questDataList = JsonUtility.FromJson<QuestDataList>(jsonText);
 
+            // 퀘스트 리스트 업데이트
+            quests = questDataList.quests;
 
             // 첫 번째 퀘스트 설명을 TextMeshProUGUI에 표시
-            if (questDataList.quests.Count > 0)
+            if (quests.Count > 0)
             {
-                
-                questText.text = questDataList.quests[0].description;
-                yes.gameObject.SetActive(true);
-                no.gameObject.SetActive(true);
+                questText.text = quests[currentQuestIndex].description;
+                btn_Yes.gameObject.SetActive(true);
+                btn_No.gameObject.SetActive(true);
             }
             else
             {
                 Debug.LogWarning("퀘스트 목록이 비어 있습니다.");
             }
         }
+    }
+
+    // 완료된 퀘스트를 다음으로 이동
+    public void MoveToNextQuest()
+    {
+        if (currentQuestIndex < quests.Count - 1)
+        {
+            currentQuestIndex++;
+            questText.text = quests[currentQuestIndex].description;
+        }
         else
         {
-            Debug.LogError("퀘스트 데이터가 없습니다.");
+            Debug.Log("모든 퀘스트를 완료했습니다.");
         }
     }
+
 }

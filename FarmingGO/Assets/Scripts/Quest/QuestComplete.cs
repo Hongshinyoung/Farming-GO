@@ -69,6 +69,6 @@ public class QuestComplete : MonoBehaviour
                 StartCoroutine(ActiveQuestComplete());
             }
         }
-        else Debug.Log("land is null");
+        //else Debug.Log("land is null");
     }
 }

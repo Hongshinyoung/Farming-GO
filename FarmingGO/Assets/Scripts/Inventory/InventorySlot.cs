@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    
     ItemData itemToDisplay;
     int quantity;
 

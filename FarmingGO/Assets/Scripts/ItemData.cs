@@ -6,7 +6,7 @@ using UnityEngine;
 public class ItemData : ScriptableObject
 {
     public string description;
-
+    public string equipTool;
     public Sprite thumbnail;
 
     public GameObject gameModel;

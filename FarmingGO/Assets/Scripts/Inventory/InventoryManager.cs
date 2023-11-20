@@ -9,15 +9,15 @@ public class InventoryManager : MonoBehaviour
     private void Awake()
     {
         //If there is more than one instance, destroy the extra
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Destroy(this);
-        }
-        else
-        {
-            //Set the static instance to this instance
             Instance = this;
         }
+        else if(Instance != this && Instance != null)
+        {
+            Destroy(this);
+        }   
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public ItemIndex itemIndex;
@@ -361,6 +361,50 @@ public class InventoryManager : MonoBehaviour
         }
     }
     #endregion
+
+    //Save파트
+
+    // SaveData 클래스로의 변환
+    public  SaveData GetSaveData()
+    {
+        SaveData saveData = new SaveData();
+        saveData.toolSlotInfo = ConvertItemSlotDataToStringArray(toolSlots);
+        saveData.itemSlotInfo = ConvertItemSlotDataToStringArray(itemSlots);
+        Debug.Log("저장");
+        return saveData;
+    }
+
+    // 역변환
+    public void LoadSaveData(SaveData saveData)
+    {
+        ConvertStringArrayToItemSlotData(saveData.toolSlotInfo, toolSlots);
+        ConvertStringArrayToItemSlotData(saveData.itemSlotInfo, itemSlots);
+        Debug.Log("로드");
+    }
+
+    // ItemSlotData 배열을 string 배열로 변환
+    private string[] ConvertItemSlotDataToStringArray(ItemSlotData[] slots)
+    {
+        List<string> slotInfoList = new List<string>();
+        foreach (ItemSlotData slot in slots)
+        {
+            // 각 슬롯의 정보를 문자열로 변환하여 리스트에 추가
+            string slotInfo = JsonUtility.ToJson(slot);
+            slotInfoList.Add(slotInfo);
+        }
+        return slotInfoList.ToArray();
+    }
+
+    // string 배열을 ItemSlotData 배열로 변환
+    private void ConvertStringArrayToItemSlotData(string[] slotInfoArray, ItemSlotData[] slots)
+    {
+        for (int i = 0; i < slotInfoArray.Length; i++)
+        {
+            // 문자열을 역직렬화하여 슬롯에 할당
+            ItemSlotData slot = JsonUtility.FromJson<ItemSlotData>(slotInfoArray[i]);
+            slots[i] = slot;
+        }
+    }
 
 
     // Start is called before the first frame update

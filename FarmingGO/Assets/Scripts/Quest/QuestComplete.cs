@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class QuestComplete : MonoBehaviour
     {
         loader = GetComponentInParent<QuestLoader>();
         land = GetComponent<Land>();
-        
+
     }
     private void Update()
     {
@@ -35,6 +36,8 @@ public class QuestComplete : MonoBehaviour
         loader.quest_ING.gameObject.SetActive(false);
         loader.btn_Yes.gameObject.SetActive(true);
         loader.btn_No.gameObject.SetActive(true);
+        Reward();
+
 
         // 다음 퀘스트로 이동
         if (loader != null)
@@ -57,7 +60,7 @@ public class QuestComplete : MonoBehaviour
         }
     }
 
-    void SecondQuest() 
+    void SecondQuest()
     {
         //두 번째 퀘스트 로직
         if (!isComplete && land != null)
@@ -70,5 +73,12 @@ public class QuestComplete : MonoBehaviour
             }
         }
         //else Debug.Log("land is null");
+    }
+
+    private void Reward()
+    {
+        int rewardMoney = 10000; //첫 보상
+        rewardMoney += 10000; // 퀘스트 진행될 수록 높은 보상 10000원씩 증가
+        PlayerStats.Earn(rewardMoney);
     }
 }

@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   description: "\uB3C4\uB07C \uC62C \uC378\uB775"
+  equipTool: 
   thumbnail: {fileID: 385930046, guid: 43aa5ecc16203f441a1ac4d65385c73c, type: 3}
+  itemName: "\uB3C4\uB07C"
   gameModel: {fileID: 9087390924921693442, guid: 3fa31c2ba2c25284c86deb191a7dd34a,
     type: 3}
+  cost: 0
   toolType: 2

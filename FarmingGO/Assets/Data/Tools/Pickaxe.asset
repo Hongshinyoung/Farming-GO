@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Pickaxe
   m_EditorClassIdentifier: 
   description: "\uACE1\uAD2D\uC774 \uC62C \uC378\uB775"
+  equipTool: 
   thumbnail: {fileID: -398270035, guid: 43aa5ecc16203f441a1ac4d65385c73c, type: 3}
+  itemName: "\uACE1\uAD2D\uC774"
   gameModel: {fileID: 2188238137246698129, guid: 7617b1461b62b8649b3afc089fa1db24,
     type: 3}
+  cost: 0
   toolType: 3

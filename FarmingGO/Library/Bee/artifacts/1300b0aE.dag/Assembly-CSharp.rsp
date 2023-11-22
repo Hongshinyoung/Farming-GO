@@ -414,6 +414,7 @@
 "Assets/Scripts/UI/ShopListingManager.cs"
 "Assets/Scripts/UIManager.cs"
 "Assets/Scripts/YesNoPrompt.cs"
+"Assets/SellArea.cs"
 -langversion:9.0
 
 /deterministic

@@ -1,0 +1,41 @@
+using System.Collections;
+using UnityEngine;
+
+public class EffectManager : MonoBehaviour
+{
+    public ParticleSystem[] effects; // 이펙트를 담을 배열
+    public float minsec = 10f;
+    public float maxsec = 40f;
+
+    void Start()
+    {
+        StartCoroutine(StartEffecting());
+    }
+
+    void EffectLogic()
+    {
+        int randomIndex = Random.Range(0, effects.Length); // 랜덤 이펙트 선택
+
+        // 랜덤한 이펙트를 활성화합니다.
+        effects[randomIndex].gameObject.SetActive(true);
+
+        StartCoroutine(StopEffectAfterDelay(effects[randomIndex]));
+    }
+
+    IEnumerator StartEffecting()
+    {
+        while (true)
+        {
+            EffectLogic();
+            float interval = Random.Range(minsec, maxsec);// 랜덤 시간 간격 설정
+            Debug.Log("이펙트발생");
+            yield return new WaitForSeconds(interval); 
+        }
+    }
+
+    IEnumerator StopEffectAfterDelay(ParticleSystem effect)
+    { 
+        yield return new WaitForSeconds(3); // 이펙트 지속 시간만큼 대기
+        effect.gameObject.SetActive(false); // 선택된 이펙트 비활성화
+    }
+}

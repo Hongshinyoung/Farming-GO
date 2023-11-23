@@ -377,6 +377,7 @@
 "Assets/Scripts/Buying and Selling/Shop.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CropBehaviour.cs"
+"Assets/Scripts/EffectManager.cs"
 "Assets/Scripts/EquipmentData.cs"
 "Assets/Scripts/GameStateManager.cs"
 "Assets/Scripts/GameTimestamp.cs"

@@ -61,10 +61,16 @@ public class QuestLoader : MonoBehaviour
     // 완료된 퀘스트를 다음으로 이동
     public void MoveToNextQuest()
     {
-        if (currentQuestIndex < quests.Count - 1)
+        if (currentQuestIndex < currentQuestIndex + 1)
         {
             currentQuestIndex++;
             questText.text = quests[currentQuestIndex].description;
+            Debug.Log("로더" + currentQuestIndex +"퀘스트 카운트" + quests.Count + quests[currentQuestIndex].description);
+
+            //if(questComplete != null)
+            //{
+            //    questComplete.isComplete = false;
+            //}
         }
         else
         {
@@ -72,5 +78,4 @@ public class QuestLoader : MonoBehaviour
         }
 
     }
-
 }

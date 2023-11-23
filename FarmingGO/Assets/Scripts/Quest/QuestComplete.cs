@@ -3,6 +3,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using System.Data;
+using System.Linq.Expressions;
 
 public class QuestComplete : MonoBehaviour
 {
@@ -14,10 +15,11 @@ public class QuestComplete : MonoBehaviour
     public TextMeshProUGUI questComplete;
     public bool isComplete;
     private QuestLoader loader;
+    private int currentQuestIndex = 0;
 
     private void Start()
     {
-
+        loader = GetComponent<QuestLoader>();
     }
     private void Update()
     {
@@ -37,13 +39,9 @@ public class QuestComplete : MonoBehaviour
         loader.quest_ING.gameObject.SetActive(false);
         loader.btn_Yes.gameObject.SetActive(true);
         loader.btn_No.gameObject.SetActive(true);
-        Reward();
-
-        // 다음 퀘스트로 이동
-        if (loader != null)
-        {
-            loader.MoveToNextQuest();
-        }
+        
+        
+        loader.MoveToNextQuest(); // 다음 퀘스트로 이동
     }
 
     void FirstQuest()
@@ -57,6 +55,8 @@ public class QuestComplete : MonoBehaviour
                 Debug.Log("첫 번째 퀘스트 성공");
                 isComplete = true;
                 StartCoroutine(ActiveQuestComplete());
+                Reward();
+                currentQuestIndex++;
             }
         }
     }
@@ -64,26 +64,30 @@ public class QuestComplete : MonoBehaviour
     void SecondQuest() //상점에서 토마토 씨앗을 구매해보세요
     {
         //두 번째 퀘스트 로직
-        if (!isComplete && inventoryManager != null)
+        if (inventoryManager != null && currentQuestIndex == 1)
         {
-            if(inventoryManager.HasItem("토마토씨앗"))
+            if (inventoryManager.HasItem("토마토씨앗"))
             {
                 Debug.Log("두번째 퀘스트 성공");
                 isComplete = true;
                 StartCoroutine (ActiveQuestComplete());
+                Reward();
+                currentQuestIndex++;
             }
         }
     }
     void ThirdQuest()    //농사를 지어 토마토를 수확해 보세요
     {
         //세 번째 퀘스트 로직
-        if (!isComplete && inventoryManager != null)
+        if (inventoryManager != null && currentQuestIndex == 2)
         {
-            if(requireQuestItem3.name == "Tomato_04")
+            if(inventoryManager.HasItem("Tomato_04"))
             {
                 Debug.Log("세번째 퀘스트 성공");
                 isComplete = true;
                 StartCoroutine (ActiveQuestComplete());
+                Reward();
+                currentQuestIndex++;
             }
 
         }
@@ -91,11 +95,12 @@ public class QuestComplete : MonoBehaviour
     void LastQuest()    //100,000G를 모아보세요
     {
         //마지막 퀘스트 로직
-        if (!isComplete && PlayerStats.Money >= 1000000)
+        if (PlayerStats.Money >= 1000000 && currentQuestIndex == 3)
         {
             Debug.Log("마지막 퀘스트 성공");
             isComplete = true;
             StartCoroutine (ActiveQuestComplete());
+            Reward();
         }
     }
 

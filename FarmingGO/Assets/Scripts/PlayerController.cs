@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,11 +10,11 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Animator animator;
 
-    private float moveSpeed = 4f;
-
     [Header("Movement System")]
     public float walkSpeed = 4f;
     public float runSpeed = 8f;
+
+    private bool isRunning = false;
 
 
     //Interaction components
@@ -28,10 +29,11 @@ public class PlayerController : MonoBehaviour
 
         //Get interaction component
         playerInteraction = GetComponentInChildren<PlayerInteraction>();
+    }
 
-        Vector3 savedPosition = DataManager.LoadPlayerPosition();
-        transform.position = savedPosition;
-
+    public void ToggleRunning()
+    {
+        isRunning = !isRunning;
     }
 
     // Update is called once per frame
@@ -47,8 +49,6 @@ public class PlayerController : MonoBehaviour
         {
             TimeManager.Instance.Tick();
         }
-
-        DataManager.SavePlayerPosition(transform.position);
     }
 
     //public void Interact()
@@ -75,23 +75,34 @@ public class PlayerController : MonoBehaviour
         float horizontal = joy.Horizontal;
         float vertical = joy.Vertical;
 
+        float speed = isRunning ? runSpeed : walkSpeed;
+
         //Direction in a normalised vector
         Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
-        Vector3 velocity = moveSpeed * Time.deltaTime * dir;
+        Vector3 velocity = speed * Time.deltaTime * dir;
 
-        //Is the sprint key pressed down?
-        if (Input.GetButton("Sprint"))
+        if (speed == runSpeed)
         {
-            //Set the animation to run and increase our movespeed
-            moveSpeed = runSpeed;
             animator.SetBool("Running", true);
         }
         else
         {
-            //Set the animation to walk and decrease our movespeed
-            moveSpeed = walkSpeed;
             animator.SetBool("Running", false);
         }
+
+        //Is the sprint key pressed down?
+        //if (Input.GetButton("Sprint"))
+        //{
+        //    //Set the animation to run and increase our movespeed
+        //    moveSpeed = runSpeed;
+        //    animator.SetBool("Running", true);
+        //}
+        //else
+        //{
+        //    //Set the animation to walk and decrease our movespeed
+        //    moveSpeed = walkSpeed;
+        //    animator.SetBool("Running", false);
+        //}
 
 
         //Check if there is movement
@@ -107,8 +118,5 @@ public class PlayerController : MonoBehaviour
 
         //Animation speed parameter
         animator.SetFloat("Speed", velocity.magnitude);
-
-
-
     }
 }

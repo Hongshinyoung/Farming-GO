@@ -13,7 +13,7 @@ public class ShippingBin : InteractableObject
 
         if (handSlotItem == null) return;
 
-        UIManager.Instance.TriggerYesNoPrompt($"Do you want to sell {handSlotItem.name} ? ", PlaceItemsInShippingBin);
+        UIManager.Instance.TriggerYesNoPrompt($" {handSlotItem.name}을/를 판매하시겠습니까? ", PlaceItemsInShippingBin);
     }
 
     void PlaceItemsInShippingBin()
@@ -41,6 +41,18 @@ public class ShippingBin : InteractableObject
         itemsToShip.Clear();
     }
 
+    public void Clockupdate(GameTimestamp timestamp)
+    {
+        UpdateShippingState(timestamp);
+    }
+    void UpdateShippingState(GameTimestamp timestamp)
+    {
+        if (timestamp.hour == hourToShip && timestamp.minute == 0)
+        {
+            ShipItems();
+        }
+    }
+
     static int TallyItems(List<ItemSlotData> items)
     {
         int Total = 0;
@@ -52,4 +64,5 @@ public class ShippingBin : InteractableObject
 
         return Total;
     }
+
 }

@@ -3,94 +3,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UI;
 
 
 
 public class Enemy : MonoBehaviour
 {
-
-    
     public Transform target;
- 
-    NavMeshAgent agent;
+    Rigidbody rigid;
+    BoxCollider boxCollider;
+    NavMeshAgent nav;
+    Animator anim;
+    bool isChase;
+    
 
-    public Animator anim;
-
-    enum State
+    public void Awake()
     {
-        Idle,
-        Run,
-        Attack
+        rigid = GetComponent<Rigidbody>();
+        boxCollider = GetComponent<BoxCollider>();
+        nav = GetComponent<NavMeshAgent>();
+        anim = GetComponentInChildren<Animator>();
+
+        Invoke("ChaseStart", 2);
     }
 
-    State state;
-
-    // Start is called before the first frame update
-    void Start()
+    void FreezVelocity()
     {
-
-        state = State.Idle;
-
-        agent = GetComponent<NavMeshAgent>();
+        if (isChase)
+        {
+            rigid.velocity = Vector3.zero;
+            rigid.angularVelocity = Vector3.zero;
+        }
     }
 
+    void ChaseStart()
+    {
+        if(PlayerStats.Money == 0)
+        {
+            isChase = true;
+            anim.SetBool("IsRun", true);
+        }
+    }
     void Update()
     {
-
-        if (state == State.Idle)
-        {
-            UpdateIdle();
-        }
-        else if (state == State.Run)
-        {
-            UpdateRun();
-        }
-        else if (state == State.Attack)
-        {
-            UpdateAttack();
-        }
-
+        if(isChase)
+        nav.SetDestination(target.position);
     }
 
-    private void UpdateAttack()
+    void FixedUpdate()
     {
-        agent.speed = 0;
-        float distance = Vector3.Distance(transform.position, target.transform.position);
-        if (distance > 2)
-        {
-            state = State.Run;
-            anim.SetTrigger("Run");
-        }
-    }
-
-    private void UpdateRun()
-    {
-
-
-
-        float distance = Vector3.Distance(transform.position, target.transform.position);
-        if (distance <= 2)
-        {
-            state = State.Attack;
-            anim.SetTrigger("Attack");
-        }
-
-
-        agent.speed = 3.5f;
-        agent.destination = target.transform.position;
-
-    }
-
-    private void UpdateIdle()
-    {
-        agent.speed = 0;
-        target = GameObject.Find("Player").transform;
-
-        if (target != null)
-        {
-            state = State.Run;
-            anim.SetTrigger("Run");
-        }
+        FreezVelocity();
     }
 }

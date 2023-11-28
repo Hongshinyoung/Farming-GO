@@ -47,7 +47,7 @@ public class ShopListingManager : MonoBehaviour
     {
         confirmationScreen.SetActive(true);
 
-        confirmationPrompt.text = $"Buy {itemToBuy.name}?";
+        confirmationPrompt.text = $"{itemToBuy.name}을 구매하시겠습니까?";
 
         quantityText.text = "x" + quantity;
 
@@ -57,7 +57,7 @@ public class ShopListingManager : MonoBehaviour
 
         if(playerMoneyLeft < 0)
         {
-            costCalculationText.text = "Insufficient funds";
+            costCalculationText.text = "골드가 부족합니다";
             purchaseButton.interactable = false;
             return;
         }

@@ -13,6 +13,7 @@ TagManager:
   - Pig
   - Ground
   - Grass
+  - Enemy
   layers:
   - Default
   - TransparentFX

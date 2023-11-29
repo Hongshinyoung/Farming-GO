@@ -6,15 +6,22 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public VariableJoystick joy;
+    public GameOverManager overManager;
     //Movement Components
     private CharacterController controller;
     private Animator animator;
+    MeshRenderer[] meshs;
 
     [Header("Movement System")]
     public float walkSpeed = 4f;
     public float runSpeed = 8f;
 
+    public int health;
+
     private bool isRunning = false;
+
+    bool isDamage;
+    bool isDead;
 
 
     //Interaction components
@@ -29,8 +36,10 @@ public class PlayerController : MonoBehaviour
 
         //Get interaction component
         playerInteraction = GetComponentInChildren<PlayerInteraction>();
-    }
 
+        meshs = GetComponentsInChildren<MeshRenderer>();
+
+    }
     public void ToggleRunning()
     {
         isRunning = !isRunning;
@@ -118,5 +127,43 @@ public class PlayerController : MonoBehaviour
 
         //Animation speed parameter
         animator.SetFloat("Speed", velocity.magnitude);
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "EnemyAttack")
+        {
+            if (!isDamage)
+            {
+                EnemyAttack enemyAttack = other.GetComponent<EnemyAttack>();
+                health -= enemyAttack.damage;
+                StartCoroutine(OnDamage());
+            }
+        }
+    }
+
+    IEnumerator OnDamage()
+    {
+        isDamage = true;
+        foreach(MeshRenderer mesh in meshs)
+        {
+            mesh.material.color = Color.yellow;
+        } 
+        yield return new WaitForSeconds(1f);
+        isDamage = false;
+        foreach(MeshRenderer mesh in meshs)
+        {
+            mesh.material.color = Color.white;
+        }
+        
+        if(health <= 0)
+        {
+            OnDie();
+        }
+    }
+
+    void OnDie()
+    {
+        isDead = true;
+        overManager.GameOver();
     }
 }

@@ -9,6 +9,7 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     public Transform target;
+    public int moneyCount;
     Rigidbody rigid;
     BoxCollider boxCollider;
     NavMeshAgent nav;
@@ -45,8 +46,11 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        if(isChase)
-        nav.SetDestination(target.position);
+        if (PlayerStats.Money > moneyCount)
+        {
+            if (isChase)
+            nav.SetDestination(target.position);
+        }
     }
 
     void FixedUpdate()

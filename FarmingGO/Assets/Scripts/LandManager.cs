@@ -143,6 +143,29 @@ public class LandManager : MonoBehaviour
     }
     #endregion
 
+
+    public void SetAllLandStatusToWatered()
+    {
+        foreach (Land land in landPlots)
+        {
+            land.SwitchLandStatus(Land.LandStatus.Watered);
+        }
+    }
+
+    public void SetAllCropsToWilted()
+    {
+        foreach(CropSaveState cropSave in cropData)
+        {
+            Land land = landPlots[cropSave.landID];
+            CropBehaviour crop = land.GetComponentInChildren<CropBehaviour>();
+
+            if (crop != null)
+            {
+                crop.cropState = CropBehaviour.CropState.Wilted;
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

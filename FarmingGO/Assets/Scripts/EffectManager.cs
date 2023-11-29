@@ -4,8 +4,10 @@ using UnityEngine;
 public class EffectManager : MonoBehaviour
 {
     public ParticleSystem[] effects; // 이펙트를 담을 배열
-    public float minsec = 10f;
-    public float maxsec = 40f;
+    public float minsec = 100f;
+    public float maxsec = 150f;
+
+    public LandManager landManager;
 
     void Start()
     {
@@ -19,6 +21,8 @@ public class EffectManager : MonoBehaviour
         // 랜덤한 이펙트를 활성화합니다.
         effects[randomIndex].gameObject.SetActive(true);
 
+        landManager.SetAllLandStatusToWatered();
+        landManager.SetAllCropsToWilted();
         StartCoroutine(StopEffectAfterDelay(effects[randomIndex]));
     }
 

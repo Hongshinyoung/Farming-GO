@@ -106,7 +106,7 @@ public class CropBehaviour : MonoBehaviour
         LandManager.Instance.OnCropStateChange(landID, cropState, growth, health);
     }
     
-    void SwitchState(CropState stateToSwitch)
+    public void SwitchState(CropState stateToSwitch)
     {
         seed.SetActive(false);
         seedling.SetActive(false);

@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46c8eed950470747b4a5b822d517191, type: 3}
   m_Name: "\uD638\uBC15 \uC528\uC557"
   m_EditorClassIdentifier: 
-  description: "\uC625\uC218\uC218 \uC528\uC557"
+  description: "\uD638\uBC15 \uC528\uC557"
   equipTool: 
   thumbnail: {fileID: 676728186, guid: 4fb8dcb9c427c62478830363cae9caa6, type: 3}
   itemName: 
-  gameModel: {fileID: 8554979865545778643, guid: 9a81aff6db3d071449d91cf8ec0d73f8,
-    type: 3}
+  gameModel: {fileID: 1000012003911730, guid: 02b75c742ffb1c940acf8bedb229be09, type: 3}
   cost: 300
   daysToGrow: 10
   cropToYield: {fileID: 11400000, guid: deda17bea368313478225cf3f57fa3ab, type: 2}

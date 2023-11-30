@@ -161,7 +161,7 @@ public class LandManager : MonoBehaviour
 
             if (crop != null)
             {
-                crop.cropState = CropBehaviour.CropState.Wilted;
+                crop.SwitchState(CropBehaviour.CropState.Wilted);
             }
         }
     }

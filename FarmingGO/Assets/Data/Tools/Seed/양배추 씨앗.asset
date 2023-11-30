@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46c8eed950470747b4a5b822d517191, type: 3}
   m_Name: "\uC591\uBC30\uCD94 \uC528\uC557"
   m_EditorClassIdentifier: 
-  description: "\uC591\uBC30\uCD94\uC758 \uC528\uC557"
+  description: "\uC591\uBC30\uCD94 \uC528\uC557"
   equipTool: 
   thumbnail: {fileID: -1692488457, guid: 43aa5ecc16203f441a1ac4d65385c73c, type: 3}
   itemName: 

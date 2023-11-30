@@ -7,6 +7,7 @@ public class ShippingBin : InteractableObject
     public static int hourToShip = 18;
     public static List<ItemSlotData> itemsToShip = new List<ItemSlotData>();
 
+
     public override void Pickup()
     {
         ItemData handSlotItem = InventoryManager.Instance.GetEquippedSlotItem(InventorySlot.InventoryType.Item);
@@ -39,18 +40,6 @@ public class ShippingBin : InteractableObject
         PlayerStats.Earn(moneyToReceive);
 
         itemsToShip.Clear();
-    }
-
-    public void Clockupdate(GameTimestamp timestamp)
-    {
-        UpdateShippingState(timestamp);
-    }
-    void UpdateShippingState(GameTimestamp timestamp)
-    {
-        if (timestamp.hour == hourToShip && timestamp.minute == 0)
-        {
-            ShipItems();
-        }
     }
 
     static int TallyItems(List<ItemSlotData> items)

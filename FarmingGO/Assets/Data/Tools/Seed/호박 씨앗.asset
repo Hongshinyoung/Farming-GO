@@ -16,7 +16,8 @@ MonoBehaviour:
   equipTool: 
   thumbnail: {fileID: 676728186, guid: 4fb8dcb9c427c62478830363cae9caa6, type: 3}
   itemName: 
-  gameModel: {fileID: 1000012003911730, guid: 02b75c742ffb1c940acf8bedb229be09, type: 3}
+  gameModel: {fileID: 5128562943236321987, guid: be780f529936e0546b91a5322f9973ff,
+    type: 3}
   cost: 300
   daysToGrow: 10
   cropToYield: {fileID: 11400000, guid: deda17bea368313478225cf3f57fa3ab, type: 2}

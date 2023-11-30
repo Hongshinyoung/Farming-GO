@@ -100,7 +100,7 @@ public class QuestComplete : MonoBehaviour
             Debug.Log("마지막 퀘스트 성공");
             isComplete = true;
             StartCoroutine (ActiveQuestComplete());
-            Reward();
+            Ending();
         }
     }
 
@@ -109,7 +109,13 @@ public class QuestComplete : MonoBehaviour
     private void Reward()
     {
         int rewardMoney = 5000; //첫 보상
-        rewardMoney += 8000; // 퀘스트 진행될 수록 높은 보상 8000원씩 증가
+        rewardMoney += 68000; // 퀘스트 진행될 수록 높은 보상 8000원씩 증가
         PlayerStats.Earn(rewardMoney);
+    }
+
+    private void Ending()
+    {
+        EndingManager ending = new EndingManager();
+        ending.MuteSoundPlayVideo();
     }
 }

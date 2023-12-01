@@ -410,6 +410,7 @@
 "Assets/Scripts/Save/Inven_SaveManager.cs"
 "Assets/Scripts/Save/LandSaveState.cs"
 "Assets/Scripts/Save/SaveAndLoad.cs"
+"Assets/Scripts/Save/ShippingState.cs"
 "Assets/Scripts/SceneChange.cs"
 "Assets/Scripts/SeedData.cs"
 "Assets/Scripts/ShopArea.cs"

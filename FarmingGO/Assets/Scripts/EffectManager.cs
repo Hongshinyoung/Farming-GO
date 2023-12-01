@@ -11,6 +11,12 @@ public class EffectManager : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(DelayedEffecting());
+    }
+
+    IEnumerator DelayedEffecting()
+    {
+        yield return new WaitForSeconds(60); // 1분 대기
         StartCoroutine(StartEffecting());
     }
 
@@ -33,12 +39,12 @@ public class EffectManager : MonoBehaviour
             EffectLogic();
             float interval = Random.Range(minsec, maxsec);// 랜덤 시간 간격 설정
             Debug.Log("이펙트발생");
-            yield return new WaitForSeconds(interval); 
+            yield return new WaitForSeconds(interval);
         }
     }
 
     IEnumerator StopEffectAfterDelay(ParticleSystem effect)
-    { 
+    {
         yield return new WaitForSeconds(3); // 이펙트 지속 시간만큼 대기
         effect.gameObject.SetActive(false); // 선택된 이펙트 비활성화
     }

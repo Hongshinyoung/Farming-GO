@@ -14,6 +14,7 @@ public class GameOverManager : MonoBehaviour
 
     public void Restart()
     {
+        PlayerStats.ResetMoney();
         SceneManager.LoadScene(0);
     }
 }

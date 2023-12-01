@@ -112,7 +112,7 @@ public class QuestComplete : MonoBehaviour
     private void Reward()
     {
         int rewardMoney = 5000; //첫 보상
-        rewardMoney += 12500; // 퀘스트 진행될 수록 높은 보상 8000원씩 증가
+        rewardMoney += 25000; // 퀘스트 진행될 수록 높은 보상 8000원씩 증가
         PlayerStats.Earn(rewardMoney);
     }
 

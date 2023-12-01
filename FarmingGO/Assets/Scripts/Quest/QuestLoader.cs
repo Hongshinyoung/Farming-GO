@@ -32,13 +32,24 @@ public class QuestLoader : MonoBehaviour
 
     void Start()
     {
-        string filePath = Application.dataPath + "/Scripts/Quest/QuestList/QuestData.json";
+        string filePath = Path.Combine(Application.streamingAssetsPath, "QuestData.json");
 
-        if (File.Exists(filePath))
+        // 파일에서 JSON 데이터 읽기
+        string jsonText = "";
+
+        // 파일이 압축되어 있다면 WWW를 사용하여 파일을 읽어야 함.
+#if UNITY_ANDROID && !UNITY_EDITOR
+        using (WWW reader = new WWW(filePath))
         {
-            // 파일에서 JSON 데이터 읽기
-            string jsonText = File.ReadAllText(filePath);
+            while (!reader.isDone) { }
+            jsonText = reader.text;
+        }
+#else
+        jsonText = File.ReadAllText(filePath);
+#endif
 
+        if (!string.IsNullOrEmpty(jsonText))
+        {
             // JSON 데이터를 QuestDataList 객체로 파싱
             QuestDataList questDataList = JsonUtility.FromJson<QuestDataList>(jsonText);
 
@@ -62,7 +73,7 @@ public class QuestLoader : MonoBehaviour
     // 완료된 퀘스트를 다음으로 이동
     public void MoveToNextQuest()
     {
-        if (currentQuestIndex < currentQuestIndex + 1)  
+        if (currentQuestIndex < quests.Count - 1)
         {
             currentQuestIndex++;
             questText.text = quests[currentQuestIndex].description;
@@ -77,6 +88,5 @@ public class QuestLoader : MonoBehaviour
             Debug.Log("모든 퀘스트를 완료했습니다.");
             questloader.SetActive(false);
         }
-
     }
 }

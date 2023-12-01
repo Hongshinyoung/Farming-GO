@@ -8,6 +8,12 @@ public class PlayerStats
 
     public const string CURRENCY = "G";
 
+    public static void ResetMoney()
+    {
+        Money = 0;
+        UIManager.Instance.RenderPlayerStats();
+    }
+
     public static void Spend(int Cost)
     {
         if(Cost > Money)

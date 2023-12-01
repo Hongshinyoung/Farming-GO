@@ -23,6 +23,12 @@
             "description": "100,000G를 모아보세요",
             "reward": 400,
             "completed": false
+        },
+	{
+            "name": "Quest 5",
+            "description": "끝 수고",
+            "reward": 500,
+            "completed": false
         }
     ]
 }

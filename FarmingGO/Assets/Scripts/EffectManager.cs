@@ -4,8 +4,8 @@ using UnityEngine;
 public class EffectManager : MonoBehaviour
 {
     public ParticleSystem[] effects; // 이펙트를 담을 배열
-    public float minsec = 100f;
-    public float maxsec = 150f;
+    public float minsec = 150f;
+    public float maxsec = 200f;
 
     public LandManager landManager;
 

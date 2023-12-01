@@ -430,5 +430,16 @@ public class InventoryManager : MonoBehaviour
         }
         return false;
     }
+    public bool HasItems(string itemName)
+    {
+        foreach (ItemSlotData slot in itemSlots)
+        {
+            if (slot.itemData != null && slot.itemData.itemName == itemName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }

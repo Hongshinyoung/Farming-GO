@@ -1,8 +1,10 @@
 using System.Collections;
 using System;
 using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
 using System.Data;
+using UnityEngine.SceneManagement;
 using System.Linq.Expressions;
 
 public class QuestComplete : MonoBehaviour
@@ -16,13 +18,17 @@ public class QuestComplete : MonoBehaviour
     public bool isComplete;
     private QuestLoader loader;
     private int currentQuestIndex = 0;
+    public GameObject questManager;
+    public EndingManager endingManager;
 
     private void Start()
     {
         loader = GetComponent<QuestLoader>();
+
     }
     private void Update()
     {
+        Debug.Log(PlayerStats.Money);
         FirstQuest();
         SecondQuest();
         ThirdQuest();
@@ -52,7 +58,6 @@ public class QuestComplete : MonoBehaviour
         {
             if (inventoryManager.GetEquippedSlot(InventorySlot.InventoryType.Tool).itemData == requireQuestItem1)
             {
-                Debug.Log("첫 번째 퀘스트 성공");
                 isComplete = true;
                 StartCoroutine(ActiveQuestComplete());
                 Reward();
@@ -60,7 +65,7 @@ public class QuestComplete : MonoBehaviour
             }
         }
     }
-   
+
     void SecondQuest() //상점에서 토마토 씨앗을 구매해보세요
     {
         //두 번째 퀘스트 로직
@@ -68,9 +73,8 @@ public class QuestComplete : MonoBehaviour
         {
             if (inventoryManager.HasItem("토마토씨앗"))
             {
-                Debug.Log("두번째 퀘스트 성공");
                 isComplete = true;
-                StartCoroutine (ActiveQuestComplete());
+                StartCoroutine(ActiveQuestComplete());
                 Reward();
                 currentQuestIndex++;
             }
@@ -81,11 +85,10 @@ public class QuestComplete : MonoBehaviour
         //세 번째 퀘스트 로직
         if (inventoryManager != null && currentQuestIndex == 2)
         {
-            if(inventoryManager.HasItem("Tomato_04"))
+            if (inventoryManager.HasItems("Tomato"))
             {
-                Debug.Log("세번째 퀘스트 성공");
                 isComplete = true;
-                StartCoroutine (ActiveQuestComplete());
+                StartCoroutine(ActiveQuestComplete());
                 Reward();
                 currentQuestIndex++;
             }
@@ -95,12 +98,12 @@ public class QuestComplete : MonoBehaviour
     void LastQuest()    //100,000G를 모아보세요
     {
         //마지막 퀘스트 로직
-        if (PlayerStats.Money >= 1000000 && currentQuestIndex == 3)
+        if (PlayerStats.Money >= 100000)
         {
-            Debug.Log("마지막 퀘스트 성공");
             isComplete = true;
-            StartCoroutine (ActiveQuestComplete());
-            Ending();
+            StartCoroutine(ActiveQuestComplete());
+            //Ending();
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -109,13 +112,17 @@ public class QuestComplete : MonoBehaviour
     private void Reward()
     {
         int rewardMoney = 5000; //첫 보상
-        rewardMoney += 68000; // 퀘스트 진행될 수록 높은 보상 8000원씩 증가
+        rewardMoney += 12500; // 퀘스트 진행될 수록 높은 보상 8000원씩 증가
         PlayerStats.Earn(rewardMoney);
     }
 
-    private void Ending()
-    {
-        EndingManager ending = new EndingManager();
-        ending.MuteSoundPlayVideo();
-    }
+    //private void Ending()
+    //{
+    //    Debug.Log("엔딩시작");
+    //    endingManager = GetComponent<EndingManager>();
+    //    endingManager.MuteSoundPlayVideo();
+
+    //    StopCoroutine(ActiveQuestComplete());
+    //    questManager.SetActive(false);
+    //}
 }

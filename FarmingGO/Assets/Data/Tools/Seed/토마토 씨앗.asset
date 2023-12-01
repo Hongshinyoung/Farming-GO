@@ -19,7 +19,7 @@ MonoBehaviour:
   gameModel: {fileID: 5128562943236321987, guid: be780f529936e0546b91a5322f9973ff,
     type: 3}
   cost: 150
-  daysToGrow: 9
+  daysToGrow: 1
   cropToYield: {fileID: 11400000, guid: af9587db3d912fc43aa263445e09cf29, type: 2}
   seedling: {fileID: 3255355147461978485, guid: 28ed1ddace5e72d46a934dcad1b1440a,
     type: 3}

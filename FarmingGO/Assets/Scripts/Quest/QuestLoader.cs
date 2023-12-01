@@ -11,6 +11,7 @@ public class QuestLoader : MonoBehaviour
     public Button btn_Yes, btn_No;
     private QuestComplete questComplete;
     public Text quest_ING;
+    public GameObject questloader;
 
     private int currentQuestIndex = 0; // 현재 진행 중인 퀘스트의 인덱스
 
@@ -61,11 +62,10 @@ public class QuestLoader : MonoBehaviour
     // 완료된 퀘스트를 다음으로 이동
     public void MoveToNextQuest()
     {
-        if (currentQuestIndex < currentQuestIndex + 1)
+        if (currentQuestIndex < currentQuestIndex + 1)  
         {
             currentQuestIndex++;
             questText.text = quests[currentQuestIndex].description;
-            Debug.Log("로더" + currentQuestIndex +"퀘스트 카운트" + quests.Count + quests[currentQuestIndex].description);
 
             //if(questComplete != null)
             //{
@@ -75,6 +75,7 @@ public class QuestLoader : MonoBehaviour
         else
         {
             Debug.Log("모든 퀘스트를 완료했습니다.");
+            questloader.SetActive(false);
         }
 
     }

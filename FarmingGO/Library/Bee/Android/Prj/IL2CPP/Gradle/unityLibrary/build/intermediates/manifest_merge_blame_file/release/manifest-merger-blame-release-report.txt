@@ -7,150 +7,150 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="26"
-9-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+9-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="30" />
-10-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+10-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
 11
 12    <uses-feature android:glEsVersion="0x00030000" />
-12-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-52
-12-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-49
+12-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-52
+12-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-49
 13    <uses-feature
-13-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-91
+13-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-91
 14        android:name="android.hardware.vulkan.version"
-14-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-63
+14-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-63
 15        android:required="false" />
-15-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:64-88
+15-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:64-88
 16
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-65
-17-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:20-62
+17-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-65
+17-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:20-62
 18
 19    <uses-feature
-19-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-88
+19-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-88
 20        android:name="android.hardware.touchscreen"
-20-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:17-60
+20-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:17-60
 21        android:required="false" />
-21-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:61-85
+21-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:61-85
 22    <uses-feature
-22-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-99
+22-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-99
 23        android:name="android.hardware.touchscreen.multitouch"
-23-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:17-71
+23-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:17-71
 24        android:required="false" />
-24-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:72-96
+24-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:72-96
 25    <uses-feature
-25-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-108
+25-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-108
 26        android:name="android.hardware.touchscreen.multitouch.distinct"
-26-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:17-80
+26-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:17-80
 27        android:required="false" />
-27-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:81-105
+27-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:81-105
 28
 29    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-29-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-75
-29-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:20-72
+29-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-75
+29-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:20-72
 30
 31    <application android:extractNativeLibs="true" >
-31-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-24:17
-31-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+31-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-24:17
+31-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
 32        <activity
-32-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+32-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
 33            android:name="com.unity3d.player.UnityPlayerActivity"
-33-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+33-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
 34            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-34-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:185-366
+34-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:185-366
 35            android:hardwareAccelerated="false"
-35-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:402-437
+35-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:402-437
 36            android:launchMode="singleTask"
-36-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:153-184
+36-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:153-184
 37            android:resizeableActivity="false"
-37-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:367-401
+37-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:367-401
 38            android:screenOrientation="userLandscape"
-38-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-152
+38-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-152
 39            android:theme="@style/UnityThemeSelector" >
-39-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
+39-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 40            <intent-filter>
-40-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
+40-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
 41                <action android:name="android.intent.action.MAIN" />
-41-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
-41-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+41-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+41-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
-43-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+43-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+43-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
 44            </intent-filter>
 45
 46            <meta-data
-46-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
+46-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
 47                android:name="unityplayer.UnityActivity"
-47-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
+47-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
 48                android:value="true" />
-48-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
+48-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
 49            <meta-data
-49-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+49-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
 50                android:name="android.notch_support"
-50-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+50-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
 51                android:value="true" />
-51-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+51-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
 52        </activity>
 53
 54        <meta-data
-54-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+54-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
 55            android:name="unity.splash-mode"
-55-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+55-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
 56            android:value="0" />
-56-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+56-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
 57        <meta-data
-57-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+57-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
 58            android:name="unity.splash-enable"
-58-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
+58-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
 59            android:value="True" />
-59-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+59-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
 60        <meta-data
-60-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+60-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
 61            android:name="unity.launch-fullscreen"
-61-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+61-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
 62            android:value="True" />
-62-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+62-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
 63        <meta-data
-63-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+63-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
 64            android:name="unity.allow-resizable-window"
-64-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
+64-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
 65            android:value="False" />
-65-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+65-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
 66        <meta-data
-66-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+66-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
 67            android:name="notch.config"
-67-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+67-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
 68            android:value="portrait|landscape" />
-68-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+68-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
 69
 70        <receiver
-70-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-113
+70-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-113
 71            android:name="com.unity.androidnotifications.UnityNotificationManager"
-71-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:15-85
+71-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:15-85
 72            android:exported="false" />
-72-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:86-110
+72-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:86-110
 73        <receiver
-73-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-22:16
+73-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-22:16
 74            android:name="com.unity.androidnotifications.UnityNotificationRestartOnBootReceiver"
-74-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:15-99
+74-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:15-99
 75            android:enabled="false"
-75-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:100-123
+75-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:100-123
 76            android:exported="false" >
-76-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:124-148
+76-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:124-148
 77            <intent-filter>
-77-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:7-21:23
+77-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:7-21:23
 78                <action android:name="android.intent.action.BOOT_COMPLETED" />
-78-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:9-71
-78-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-68
+78-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:9-71
+78-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-68
 79            </intent-filter>
 80        </receiver>
 81
 82        <meta-data
-82-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:5-99
+82-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:5-99
 83            android:name="com.unity.androidnotifications.exact_scheduling"
-83-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:16-78
+83-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:16-78
 84            android:value="0" />
-84-->D:\GitHub\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:79-96
+84-->C:\UnityProjects\Farming-GO\FarmingGO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:79-96
 85    </application>
 86
 87</manifest>

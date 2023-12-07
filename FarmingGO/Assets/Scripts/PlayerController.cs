@@ -40,9 +40,18 @@ public class PlayerController : MonoBehaviour
         meshs = GetComponentsInChildren<MeshRenderer>();
 
     }
-    public void ToggleRunning()
+    public void Running()
     {
-        isRunning = !isRunning;
+        isRunning = true;
+        float speed = runSpeed;
+        animator.SetBool("Running", true);
+    }
+
+    public void notRunning()
+    {
+        isRunning = false;
+        float speed = walkSpeed;
+        animator.SetBool("Running", false);
     }
 
     // Update is called once per frame
@@ -90,14 +99,14 @@ public class PlayerController : MonoBehaviour
         Vector3 dir = new Vector3(horizontal, 0f, vertical).normalized;
         Vector3 velocity = speed * Time.deltaTime * dir;
 
-        if (speed == runSpeed)
-        {
-            animator.SetBool("Running", true);
-        }
-        else
-        {
-            animator.SetBool("Running", false);
-        }
+        //if (speed == runSpeed)
+        //{
+        //    animator.SetBool("Running", true);
+        //}
+        //else
+        //{
+        //    animator.SetBool("Running", false);
+        //}
 
         //Is the sprint key pressed down?
         //if (Input.GetButton("Sprint"))
